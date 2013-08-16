@@ -10,6 +10,12 @@ $(document).ready( function(){
 		mouseWheelPixels:"auto"
 	});
 
+	$("#events-list").mCustomScrollbar({
+		scrollInertia:300,
+		mouseWheel:true,
+		mouseWheelPixels:"auto"
+	});
+
 
 	$(".tt").hover(
 		function () {

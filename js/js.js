@@ -3,6 +3,7 @@
 $(document).ready( function(){
 
 
+	/* custom scrollbar init  */
 	$("#new-msgs-list").mCustomScrollbar({
 		scrollInertia:300,
 		mouseWheel:true,

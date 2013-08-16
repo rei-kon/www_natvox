@@ -168,6 +168,41 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf0707', endColorstr='#cd1515',GradientType=0 );    
   }
 
+.btn-tp4 {
+  height: 23px;
+  line-height: 23px;
+  padding: 0 15px;
+  display: inline-block;
+  color: #323131;
+  font-size: 12px;
+  border: 1px solid #f6f6f6;
+  background: url("../img/x.png") repeat-x 0 -288px;
+  -webkit-box-shadow:  0px 1px 2px 0px rgba(0,0,0,0.3);
+          box-shadow:  0px 1px 2px 0px rgba(0,0,0,0.3);
+  }
+  .btn-tp4:hover {
+    color: #1a1a1a;
+    background-position: 0 -314px;
+  }
+  /* styles for dropdown list button */
+  .btn-tp4.dd {
+    padding-right: 30px;
+  }
+  .btn-tp4.dd::before {
+    content: "";
+    position: absolute;
+    right: 11px;
+    top: 11px;
+    display: block;
+    width: 7px;
+    height: 4px;
+    background: url("../img/sprite.png") no-repeat -250px -32px; 
+    opacity: 0.5;
+  }
+  .btn-tp4.dd:hover::before {
+    opacity: 1;
+  }
+
 .btn.icon {
   padding-left: 30px;
   }

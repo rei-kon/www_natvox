@@ -1,0 +1,100 @@
+/* skin for simple slider */
+
+.skin-simple.jcarousel-container {
+    
+}
+
+
+.skin-simple .jcarousel-container-horizontal {
+    width: 927px;
+    padding: 0px;
+}
+
+.skin-simple .jcarousel-clip {
+    overflow: hidden;
+}
+
+.skin-simple .jcarousel-clip-horizontal {
+    width:  927px;
+    height: 118px;
+}
+
+.skin-simple .jcarousel-item {
+    display: block;
+    width: 103px;
+    height: 118px;
+}
+
+.skin-simple .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 0px;
+}
+
+.skin-simple .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+
+
+/* arrows */
+.skin-simple .arr {
+    display: block;
+    width: 30px;
+    height: 72px;
+    position: absolute;
+    top: 0px;
+    outline: none;
+    }
+    .skin-simple  .arr i {
+        background: url("../img/sprite.png") no-repeat 100px 100px transparent;
+        margin-top: 27px;
+        display: inline-block;
+        width: 11px;
+        height: 18px;
+        opacity: 0.15;
+    }
+    .skin-simple .arr:hover i { opacity: 0.5; }
+
+
+.skin-simple .jcarousel-next-horizontal {
+    right: 0;
+    cursor: pointer;
+    }
+    .skin-simple .jcarousel-next-horizontal i {    
+        margin-left: 5px;
+        background-position: -225px -28px;    
+    }
+
+.skin-simple .jcarousel-prev-horizontal {
+    left: 0;
+    cursor: pointer;
+    }
+    .skin-simple .jcarousel-prev-horizontal i {
+        margin-left: 14px;      
+        background-position: -239px -28px;
+    }
+
+.skin-simple .jcarousel-prev-disabled-horizontal,
+.skin-simple .jcarousel-prev-disabled-horizontal:hover,
+.skin-simple .jcarousel-prev-disabled-horizontal:focus,
+.skin-simple .jcarousel-prev-disabled-horizontal:active,
+.skin-simple .jcarousel-next-disabled-horizontal,
+.skin-simple .jcarousel-next-disabled-horizontal:hover,
+.skin-simple .jcarousel-next-disabled-horizontal:focus,
+.skin-simple .jcarousel-next-disabled-horizontal:active  {
+    cursor: default;
+}
+
+.skin-simple .jcarousel-prev-disabled-horizontal i,
+.skin-simple .jcarousel-prev-disabled-horizontal:hover i,
+.skin-simple .jcarousel-prev-disabled-horizontal:focus i,
+.skin-simple .jcarousel-prev-disabled-horizontal:active i,
+.skin-simple .jcarousel-next-disabled-horizontal i,
+.skin-simple .jcarousel-next-disabled-horizontal:hover i,
+.skin-simple .jcarousel-next-disabled-horizontal:focus i,
+.skin-simple .jcarousel-next-disabled-horizontal:active i  {
+    opacity: 0.07;
+}
+
+/* skin for top slider */

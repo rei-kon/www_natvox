@@ -32,6 +32,13 @@ $(document).ready( function(){
 		}
 	);
 
+	$('#simple-carousel').jcarousel({
+        scroll: 3,
+        animation: "150",
+        buttonNextHTML: "<div class='arr next'><i></i></div>",
+        buttonPrevHTML: "<div class='arr prev'><i></i></div>"
+    });
+
 
 }); /* end of document.ready */
 

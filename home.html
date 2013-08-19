@@ -14,9 +14,14 @@
 
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 
+	<!-- custom scrollbar plugin -->
 	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
 	<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
 	<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">	
+
+	<!-- jquery carousel plugin -->
+	<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+	<link href="css/jquery.jcarousel.css" rel="stylesheet" type="text/css">		
 
 	<script type="text/javascript" src="js/js.js"></script>
 
@@ -217,7 +222,7 @@
 		</div>
 	</div> <!-- .nav -->
 
-	<div class="home-top sh-box winWidth clearChlds">
+	<div class="home-top sh-box winWidth clearChlds gradient">
 		<div class="slider sl-top">
 			<img src="img/content/slide-1.jpg" alt="">
 		</div>
@@ -394,118 +399,217 @@
 		</div> <!-- .events -->
 	</div> <!-- .home-top -->
 
-	<div class="suggested-ch sh-box winWidth">	
+	<div class="suggested-ch sh-box winWidth gradient">	
 		<div class="title">
 			<h3>suggested channels</h3>
 			<a href="#" class="all">See all</a>
 		</div> <!-- .title -->
-		<div class="slider sugg-slider">
-			<a href="#" class="arr prev disabled"><i></i></a>
-			<a href="#" class="arr next"><i></i></a>
+		<div class="slider sugg-slider skin-simple" id="simple-carousel">
 
-			<div class="item sugg-item">
-				<div class="img">
-					<a href="#"><img src="img/content/sugg-01.jpg" alt=""></a>
-				</div>
-				<div class="txt">
-					<div class="name">
-						<a href="#">The Odd Shows Live Channel</a>
+			<ul>
+				<li class="item sugg-item">
+					<div class="img">
+						<a href="#"><img src="img/content/sugg-01.jpg" alt=""></a>
 					</div>
-				</div>
-			</div> <!-- .item -->
+					<div class="txt">
+						<div class="name">
+							<a href="#">The Odd Shows Live Channel</a>
+						</div>
+					</div>
+				</li> <!-- .item -->
 
-			<div class="item sugg-item">
-				<div class="img">
-					<a href="#"><img src="img/content/sugg-02.jpg" alt=""></a>
-				</div>
-				<div class="txt">
-					<div class="name">
-						<a href="#">Alexandra Goveres Channel</a>
+				<li class="item sugg-item">
+					<div class="img">
+						<a href="#"><img src="img/content/sugg-02.jpg" alt=""></a>
 					</div>
-				</div>
-			</div> <!-- .item -->
+					<div class="txt">
+						<div class="name">
+							<a href="#">Alexandra Goveres Channel</a>
+						</div>
+					</div>
+				</li> <!-- .item -->
 
-			<div class="item sugg-item">
-				<div class="img">
-					<a href="#"><img src="img/content/sugg-03.jpg" alt=""></a>
-				</div>
-				<div class="txt">
-					<div class="name">
-						<a href="#">The Maines Channel</a>
+				<li class="item sugg-item">
+					<div class="img">
+						<a href="#"><img src="img/content/sugg-03.jpg" alt=""></a>
 					</div>
-				</div>
-			</div> <!-- .item -->		
+					<div class="txt">
+						<div class="name">
+							<a href="#">The Maines Channel</a>
+						</div>
+					</div>
+				</li> <!-- .item -->		
 
-			<div class="item sugg-item">
-				<div class="img">
-					<a href="#"><img src="img/content/sugg-04.jpg" alt=""></a>
-				</div>
-				<div class="txt">
-					<div class="name">
-						<a href="#">The BlazeCast</a>
+				<li class="item sugg-item">
+					<div class="img">
+						<a href="#"><img src="img/content/sugg-04.jpg" alt=""></a>
 					</div>
-				</div>
-			</div> <!-- .item -->				
+					<div class="txt">
+						<div class="name">
+							<a href="#">The BlazeCast</a>
+						</div>
+					</div>
+				</li> <!-- .item -->				
 
-			<div class="item sugg-item">
-				<div class="img">
-					<a href="#"><img src="img/content/sugg-05.jpg" alt=""></a>
-				</div>
-				<div class="txt">
-					<div class="name">
-						<a href="#">Mens Fashion Channel</a>
+				<li class="item sugg-item">
+					<div class="img">
+						<a href="#"><img src="img/content/sugg-05.jpg" alt=""></a>
 					</div>
-				</div>
-			</div> <!-- .item -->			
+					<div class="txt">
+						<div class="name">
+							<a href="#">Mens Fashion Channel</a>
+						</div>
+					</div>
+				</li> <!-- .item -->			
 
-			<div class="item sugg-item">
-				<div class="img">
-					<a href="#"><img src="img/content/sugg-01.jpg" alt=""></a>
-				</div>
-				<div class="txt">
-					<div class="name">
-						<a href="#">The Odd Shows Live Channel</a>
+				<li class="item sugg-item">
+					<div class="img">
+						<a href="#"><img src="img/content/sugg-01.jpg" alt=""></a>
 					</div>
-				</div>
-			</div> <!-- .item -->
+					<div class="txt">
+						<div class="name">
+							<a href="#">The Odd Shows Live Channel</a>
+						</div>
+					</div>
+				</li> <!-- .item -->
 
-			<div class="item sugg-item">
-				<div class="img">
-					<a href="#"><img src="img/content/sugg-02.jpg" alt=""></a>
-				</div>
-				<div class="txt">
-					<div class="name">
-						<a href="#">Alexandra Goveres Channel</a>
+				<li class="item sugg-item">
+					<div class="img">
+						<a href="#"><img src="img/content/sugg-02.jpg" alt=""></a>
 					</div>
-				</div>
-			</div> <!-- .item -->
+					<div class="txt">
+						<div class="name">
+							<a href="#">Alexandra Goveres Channel</a>
+						</div>
+					</div>
+				</li> <!-- .item -->
 
-			<div class="item sugg-item">
-				<div class="img">
-					<a href="#"><img src="img/content/sugg-03.jpg" alt=""></a>
-				</div>
-				<div class="txt">
-					<div class="name">
-						<a href="#">The Maines Channel</a>
+				<li class="item sugg-item">
+					<div class="img">
+						<a href="#"><img src="img/content/sugg-03.jpg" alt=""></a>
 					</div>
-				</div>
-			</div> <!-- .item -->		
+					<div class="txt">
+						<div class="name">
+							<a href="#">The Maines Channel</a>
+						</div>
+					</div>
+				</li> <!-- .item -->		
 
-			<div class="item sugg-item">
-				<div class="img">
-					<a href="#"><img src="img/content/sugg-04.jpg" alt=""></a>
-				</div>
-				<div class="txt">
-					<div class="name">
-						<a href="#">The BlazeCast</a>
+				<li class="item sugg-item">
+					<div class="img">
+						<a href="#"><img src="img/content/sugg-04.jpg" alt=""></a>
 					</div>
-				</div>
-			</div> <!-- .item -->					
+					<div class="txt">
+						<div class="name">
+							<a href="#">The BlazeCast</a>
+						</div>
+					</div>
+				</li> <!-- .item -->		
+
+				<li class="item sugg-item">
+					<div class="img">
+						<a href="#"><img src="img/content/sugg-01.jpg" alt=""></a>
+					</div>
+					<div class="txt">
+						<div class="name">
+							<a href="#">The Odd Shows Live Channel</a>
+						</div>
+					</div>
+				</li> <!-- .item -->
+
+				<li class="item sugg-item">
+					<div class="img">
+						<a href="#"><img src="img/content/sugg-02.jpg" alt=""></a>
+					</div>
+					<div class="txt">
+						<div class="name">
+							<a href="#">Alexandra Goveres Channel</a>
+						</div>
+					</div>
+				</li> <!-- .item -->
+
+				<li class="item sugg-item">
+					<div class="img">
+						<a href="#"><img src="img/content/sugg-03.jpg" alt=""></a>
+					</div>
+					<div class="txt">
+						<div class="name">
+							<a href="#">The Maines Channel</a>
+						</div>
+					</div>
+				</li> <!-- .item -->		
+
+				<li class="item sugg-item">
+					<div class="img">
+						<a href="#"><img src="img/content/sugg-04.jpg" alt=""></a>
+					</div>
+					<div class="txt">
+						<div class="name">
+							<a href="#">The BlazeCast</a>
+						</div>
+					</div>
+				</li> <!-- .item -->				
+
+				<li class="item sugg-item">
+					<div class="img">
+						<a href="#"><img src="img/content/sugg-05.jpg" alt=""></a>
+					</div>
+					<div class="txt">
+						<div class="name">
+							<a href="#">Mens Fashion Channel</a>
+						</div>
+					</div>
+				</li> <!-- .item -->			
+
+				<li class="item sugg-item">
+					<div class="img">
+						<a href="#"><img src="img/content/sugg-01.jpg" alt=""></a>
+					</div>
+					<div class="txt">
+						<div class="name">
+							<a href="#">The Odd Shows Live Channel</a>
+						</div>
+					</div>
+				</li> <!-- .item -->
+
+				<li class="item sugg-item">
+					<div class="img">
+						<a href="#"><img src="img/content/sugg-02.jpg" alt=""></a>
+					</div>
+					<div class="txt">
+						<div class="name">
+							<a href="#">Alexandra Goveres Channel</a>
+						</div>
+					</div>
+				</li> <!-- .item -->
+
+				<li class="item sugg-item">
+					<div class="img">
+						<a href="#"><img src="img/content/sugg-03.jpg" alt=""></a>
+					</div>
+					<div class="txt">
+						<div class="name">
+							<a href="#">The Maines Channel</a>
+						</div>
+					</div>
+				</li> <!-- .item -->		
+
+				<li class="item sugg-item">
+					<div class="img">
+						<a href="#"><img src="img/content/sugg-04.jpg" alt=""></a>
+					</div>
+					<div class="txt">
+						<div class="name">
+							<a href="#">The BlazeCast</a>
+						</div>
+					</div>
+				</li> <!-- .item -->	
+			</ul>						
 
 		</div>
 	</div> <!-- .suggested-ch -->
 
-	<div class="b-cst sh-box winWidth">	
+	<div class="b-cst sh-box winWidth gradient">	
 		<div class="title">
 			<h3>Live &amp; upcoming broadcasts</h3>
 			<a href="#" class="all">See all</a>
@@ -638,9 +742,9 @@
 			</div> <!-- .item -->
 
 		</div>
-	</div> <!-- .suggested-ch -->	
+	</div> <!-- .b-cst -->	
 
-		<div class="b-cst sh-box winWidth">	
+	<div class="b-cst sh-box winWidth gradient">	
 		<div class="title">
 			<h3>Popular &amp; trending broadcasts</h3>
 			<a href="#" class="all">See all</a>
@@ -773,7 +877,7 @@
 			</div> <!-- .item -->
 
 		</div>
-	</div> <!-- .suggested-ch -->	
+	</div> <!-- .b-cst -->	
 
 </div>
 

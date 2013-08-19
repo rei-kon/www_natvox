@@ -495,12 +495,13 @@
 	}
 	.item.sugg-item {
 		text-align: center;
-		display: inline-block;
-		width: 98px;
+		/*display: inline-block;*/
+		/*width: 98px;*/
 		vertical-align: top;
 		}
 		.item.sugg-item .img {
 			display: block;
+			height: 72px;
 		}
 			.item.sugg-item .img img {
 				margin: 0 auto;
@@ -515,6 +516,7 @@
 			}
 		.item.sugg-item .txt {
 			display: block;
+			height: 46px;
 			font-size: 11px;
 			line-height: 14px;			
 		}

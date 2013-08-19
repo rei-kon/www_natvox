@@ -23,6 +23,10 @@
 	<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
 	<link href="css/jquery.jcarousel.css" rel="stylesheet" type="text/css">		
 
+	<!-- fancybox plugin for dialog windows -->
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css">			
+
 	<script type="text/javascript" src="js/js.js"></script>
 
 <!--[if gte IE 9]>
@@ -52,8 +56,9 @@
 				<a href="#" class="btn btn-tp1 gray">Popular &amp; Trending</a>
 			</div>
 		</div>
+
 		<!-- logged in state -->		
-		<div class="box-r clearChlds lk">
+		<!-- <div class="box-r clearChlds lk">
 			<div class="info">
 				<div class="photo">
 					<img src="img/content/userpic.jpg">
@@ -82,7 +87,7 @@
 											<span class="time">22:30</span>
 										</div>
 									</div>
-								</div> <!-- .item -->
+								</div> 
 								<div class="item news-item">
 									<div class="img">
 										<img src="img/content/news-2.jpg" alt="">
@@ -97,7 +102,7 @@
 											<span class="time">22:30</span>
 										</div>
 									</div>
-								</div> <!-- .item -->
+								</div> 
 								<div class="item news-item">
 									<div class="img">
 										<img src="img/content/news-1.jpg" alt="">
@@ -112,7 +117,7 @@
 											<span class="time">22:30</span>
 										</div>
 									</div>
-								</div> <!-- .item -->
+								</div> 
 								<div class="item news-item">
 									<div class="img">
 										<img src="img/content/news-2.jpg" alt="">
@@ -127,7 +132,7 @@
 											<span class="time">22:30</span>
 										</div>
 									</div>
-								</div> <!-- .item -->
+								</div> 
 								<div class="item news-item">
 									<div class="img">
 										<img src="img/content/news-2.jpg" alt="">
@@ -142,7 +147,7 @@
 											<span class="time">22:30</span>
 										</div>
 									</div>
-								</div> <!-- .item -->
+								</div> 
 								<div class="item news-item">
 									<div class="img">
 										<img src="img/content/news-2.jpg" alt="">
@@ -157,7 +162,7 @@
 											<span class="time">22:30</span>
 										</div>
 									</div>
-								</div> <!-- .item -->
+								</div> 
 								<div class="item news-item">
 									<div class="img">
 										<img src="img/content/news-2.jpg" alt="">
@@ -172,11 +177,11 @@
 											<span class="time">22:30</span>
 										</div>
 									</div>
-								</div> <!-- .item -->
+								</div>
 							</div>
 						
 						</div>						
-					</div> <!-- .tltip -->
+					</div>
 				</div>
 				<div class="btn btn-tp3 icon pref tt"><i></i>
 					<div class="tltip arr-top">
@@ -191,18 +196,18 @@
 								<li><a href="#">Log out</a></li>
 							</ul>	
 						</div>						
-					</div> <!-- .tltip -->
+					</div> 
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- not logged in state -->
-		<!-- <div class="box-r clearChlds login-box">
+		<div class="box-r clearChlds login-box">
 			<div class="btn-set">
-				<a href="#" class="btn btn-tp2 light icon reg"><i></i>register</a>
+				<a href="#reg-form" class="btn btn-tp2 light icon reg fancybox"><i></i>register</a>
 				<a href="#" class="btn btn-tp2 dark icon login"><i></i>log in</a>
 			</div>
-		</div> -->
+		</div>
 	</div>
 </div> <!-- .header -->
 
@@ -914,6 +919,43 @@
 		</div>
 	</div>
 </div> <!-- .footer -->
+
+<!-- lightbox forms here -->
+<div class="hidden" >
+	<div id="reg-form" class="lb-form reg-form">
+		<h3>Register</h3>	
+		<form action="#">
+			<p>
+				<label for="name">Name:</label>
+				<input type="text" id="name" class="custom">
+			</p>
+			<p>
+				<label for="surname">Surname:</label>
+				<input type="text" id="surname" class="custom error">
+			</p>
+			<p>
+				<label for="email">E-mail address:</label>
+				<input type="text" id="email" class="custom">
+			</p>
+			<p class="pwd">
+				<label for="password">Password:</label>
+				<input type="password" id="password" class="custom">
+			</p>
+			<p>
+				<label for="password2">Repeat password:</label>
+				<input type="password" id="password2" class="custom">
+			</p>
+			<!-- если нет ошибок - не показывать весь див -->
+			<div class="errors">
+				<p>Your passwords do not match. Please try again. </p>
+				<p>Another error message.</p>
+			</div>
+			<p class="submit">
+				<input type="submit" value="Log in" class="btn btn-tp1 green">
+			</p>
+		</form>	
+	</div>
+</div>
 
 </body>
 </html>	

@@ -39,6 +39,10 @@ $(document).ready( function(){
         buttonPrevHTML: "<div class='arr prev'><i></i></div>"
     });
 
+    $('.fancybox').fancybox({
+		padding: 0,
+		arrows : false
+	});
 
 }); /* end of document.ready */
 

@@ -1,4 +1,61 @@
 
+/* forms */
+.reg-form {
+	width: 347px;
+	padding: 27px 91px 33px;
+	background: #FFF;
+	font-size: 13px;
+}
+	.reg-form h3 {
+		font-size: 24px;
+		line-height: 30px;
+		color: #171717;
+		margin: 0 0 30px 0;
+	}
+	.reg-form p {
+		margin: 0 0 12px 0;
+	}
+	.reg-form p.pwd {
+		margin-top: 42px;
+	}
+
+	.reg-form label {
+		font-size: 13px;
+		line-height: 16px;
+		display: block;
+		color: #090909;
+		margin-bottom: 6px;
+	}
+	.reg-form input.custom {
+		width: 325px;
+		padding: 0 10px;
+		border: 1px solid #aeaeae;
+		height: 29px;
+		line-height: 29px;
+		background: url("../img/x.png") repeat-x 0 -580px;
+		color: #090909;
+		font-size: 12px;
+	}
+	.reg-form input.custom.error {
+		border-color: #e61e0f;
+	}
+	.reg-form p.submit {
+		margin-top: 28px;
+		margin-bottom: 0;
+		}
+		.reg-form .submit .btn { padding: 0 20px; }
+	
+	.reg-form .errors {
+		color: #e61e0f;
+		font-size: 11px;
+		line-height: 13px;
+		margin-bottom: -16px;
+		}
+		.reg-form .errors p {
+			margin-bottom: 5px;
+		}
+/* // forms */
+
 .feedback {
 	position: fixed;
 	right: 0;
@@ -516,14 +573,18 @@
 			}
 		.item.sugg-item .txt {
 			display: block;
-			height: 46px;
+			height: 37px;
 			font-size: 11px;
 			line-height: 14px;			
+			padding: 0 3px;
+			overflow: hidden;
 		}
 		.item.sugg-item .txt a {
 			display: inline-block;
 			color: #545454;
-			padding: 9px 0;
+			padding: 9px 0 0 0;
+			height: 28px;
+			overflow: hidden;
 		}
 		.item.sugg-item:hover .txt a {
 			color: #222;			

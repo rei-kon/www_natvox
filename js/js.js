@@ -1,4 +1,19 @@
 
+function topcarousel_initCallback(carousel) {
+    $('.jcarousel-control a').bind('click', function() {
+    	$('.jcarousel-control a').removeClass('active');
+    	$(this).addClass('active');
+        carousel.scroll(jQuery.jcarousel.intval(jQuery(this).attr('rel')));
+        return false;
+    });
+};
+
+function topcarousel_trigger(carousel, state) {
+	var num = carousel.first;
+	$('.jcarousel-control a').removeClass('active');
+	$('.jcarousel-control a').eq(num-1).addClass('active');
+}
+
 
 $(document).ready( function(){
 
@@ -48,12 +63,18 @@ $(document).ready( function(){
 	    }
 	});
 	
-
 	$('#simple-carousel').jcarousel({
         scroll: 3,
         animation: "150",
         buttonNextHTML: "<div class='arr next'><i></i></div>",
         buttonPrevHTML: "<div class='arr prev'><i></i></div>"
+    });
+
+    $('#top-carousel').jcarousel({
+        scroll: 1,
+        animation: "150",
+        initCallback: topcarousel_initCallback,
+        itemLoadCallback: topcarousel_trigger
     });
 
     $('.fancybox').fancybox({

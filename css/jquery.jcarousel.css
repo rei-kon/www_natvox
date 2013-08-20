@@ -97,4 +97,130 @@
     opacity: 0.07;
 }
 
+
+
 /* skin for top slider */
+
+.skin-top.jcarousel-container {
+    height: 386px;
+}
+
+
+.skin-top .jcarousel-container-horizontal {
+    width: 681px;
+    padding: 0px;
+}
+
+.skin-top .jcarousel-clip {
+    overflow: hidden;
+}
+
+.skin-top .jcarousel-clip-horizontal {
+    width:  681px;
+    height: 386px;
+}
+
+.skin-top .jcarousel-item {
+    display: block;
+    width: 681px;
+    height: 386px;
+}
+
+.skin-top .jcarousel-item-horizontal {
+    margin-left: 0;
+    margin-right: 0px;
+}
+
+.skin-top .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+.skin-top .grad {
+    position: absolute;
+    top:0;
+    left: 0;
+    width:  681px;
+    height: 386px;    
+    background: url("../img/x.png") repeat-x 0px -611px transparent;
+    z-index: 2;
+}
+
+/* arrows */
+
+.skin-top .jcarousel-next-horizontal,
+.skin-top .jcarousel-prev-horizontal {
+    background: url("../img/sprite.png") no-repeat 100px 100px transparent;
+    display: inline-block;
+    width: 41px;
+    height: 42px;
+    position: absolute;
+    bottom: 16px;
+    z-index: 4;
+}
+
+.skin-top .jcarousel-next-horizontal {
+    right: 12px;
+    cursor: pointer;
+    background-position: -340px 0px;   
+}
+    
+.skin-top .jcarousel-prev-horizontal {
+    right: 58px;
+    cursor: pointer;
+    background-position: -298px 0px;
+}
+
+.skin-top .jcarousel-next-horizontal:hover {
+    background-position: -424px 0;    
+}
+.skin-top .jcarousel-prev-horizontal:hover {
+    background-position: -382px 0;
+}
+
+.skin-top .jcarousel-prev-disabled-horizontal,
+.skin-top .jcarousel-prev-disabled-horizontal:hover,
+.skin-top .jcarousel-prev-disabled-horizontal:focus,
+.skin-top .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+    opacity: 0.3;
+    background-position: -298px 0px;
+}
+
+
+.skin-top .jcarousel-next-disabled-horizontal,
+.skin-top .jcarousel-next-disabled-horizontal:hover,
+.skin-top .jcarousel-next-disabled-horizontal:focus,
+.skin-top .jcarousel-next-disabled-horizontal:active  {
+    cursor: default;
+    opacity: 0.3;    
+    background-position: -340px 0px;
+}
+
+/**
+ * Additional styles for the controls.
+ */
+.jcarousel-control {
+    position: absolute;
+    bottom: 23px;
+    right: 112px;
+    z-index: 3;
+    text-align: right;
+    cursor: default;
+}
+
+.jcarousel-control a {
+    background: url("../img/sprite.png") no-repeat -209px -16px transparent;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    outline: 0;
+    margin-left: -2px;
+}
+.jcarousel-control a:hover {
+    background-position: -209px 0px;    
+}
+.jcarousel-control a.active {
+    cursor: default;
+    background-position: -209px -31px;
+}

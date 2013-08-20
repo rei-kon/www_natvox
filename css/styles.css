@@ -27,17 +27,7 @@
 		margin-bottom: 6px;
 	}
 	.reg-form input.custom {
-		width: 325px;
-		padding: 0 10px;
-		border: 1px solid #aeaeae;
-		height: 29px;
-		line-height: 29px;
-		background: url("../img/x.png") repeat-x 0 -580px;
-		color: #090909;
-		font-size: 12px;
-	}
-	.reg-form input.custom.error {
-		border-color: #e61e0f;
+		width: 325px;		
 	}
 	.reg-form p.submit {
 		margin-top: 28px;
@@ -54,6 +44,60 @@
 		.reg-form .errors p {
 			margin-bottom: 5px;
 		}
+
+.login-form { 
+	position: relative;
+	padding: 24px 15px 13px 15px;
+	}
+	.login-form p {
+		font-size: 13px;
+		line-height: 16px;
+		color: #090909;
+		margin:0 0 7px 0;		
+	}
+	.login-form label {
+		display: block;
+		margin-bottom: 6px;
+	}
+	.login-form input.custom {
+		width: 195px;
+	}
+	.login-form .errors {
+		padding-bottom: 2px;
+	}
+	.login-form .errors p {
+		font-size: 11px; 
+		line-height: 12px;
+		color: #e61e0f;
+		margin-bottom: 6px;
+	}
+	.login-form .clearChlds {
+		width: 217px;	
+		}
+		.login-form .remember {
+			display: table-cell;
+			width: 100%;
+			padding-top: 5px;
+			}
+			.login-form .remember input {
+				position: relative;
+				top: 2px;
+			}
+			.login-form .remember label {
+				display: inline-block;
+				color: #090909;
+				font-size: 11px;
+				line-height: 16px;
+				padding-left: 5px;
+			}
+		.login-form .submit {
+			display: table-cell;
+			text-align: right;
+			padding-top: 5px;
+			}
+			.login-form .submit .btn {
+				padding: 0 20px;
+			}
 /* // forms */
 
 .feedback {
@@ -191,6 +235,20 @@
 		}
 		.header .box-r.login-box .btn {
 			margin-left: 4px;
+			outline: none !important;
+		}
+		.header .box-r.login-box .lb {
+			position: relative;
+			display: inline-block;
+		}
+		.header .box-r.login-box .lb .tltip {
+			top: 41px;
+			right: 4px;
+		}
+		.header .box-r.login-box .lb .tltip::before {
+			width: 87px;
+			right: -12px;
+			background-position: 25px -83px;			
 		}
 
 	.lk {

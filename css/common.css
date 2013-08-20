@@ -389,3 +389,18 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
     margin: 0;
     list-style: none;
   }
+
+
+input.custom {
+  padding: 0 10px;
+  border: 1px solid #aeaeae;
+  height: 29px;
+  line-height: 29px;
+  background: url("../img/x.png") repeat-x 0 -580px;
+  color: #090909;
+  font-size: 12px;
+}
+
+input.custom.error {
+    border-color: #e61e0f;
+  }

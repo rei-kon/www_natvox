@@ -205,7 +205,40 @@
 		<div class="box-r clearChlds login-box">
 			<div class="btn-set">
 				<a href="#reg-form" class="btn btn-tp2 light icon reg fancybox"><i></i>register</a>
-				<a href="#" class="btn btn-tp2 dark icon login"><i></i>log in</a>
+
+ 				<div class="tt-click lb">
+					<a href="#" class="btn btn-tp2 dark icon login"><i></i>log in</a>
+					<div class="tltip arr-top">
+						<div class="in login-form">
+							<form action="#">
+								<p>
+									<label for="email">E-mail:</label>
+									<input type="text" class="custom" id="email">
+								</p>
+								<p>
+									<label for="password">Password:</label>
+									<input type="password" class="custom error" id="password">
+								</p>
+								<!-- при остутствии ошибок не показывать весь див -->
+								<!-- <div class="errors">
+									<p>The username or password you entered is incorrect. Please try again.</p>
+									<p>Password fail. Please try again.</p>
+									<p><a href="#">Forgot password?</a></p>
+								</div> -->
+								<div class="clearChlds">
+									<div class="remember">
+										<input type="checkbox" id="remember">
+										<label for="remember">Remember me</label>
+									</div>
+									<div class="submit">
+										<input type="submit" value="Log in" class="btn btn-tp1 green">
+									</div>
+								</div>
+							</form>								
+						</div>						
+					</div>	
+				</div>
+								
 			</div>
 		</div>
 	</div>

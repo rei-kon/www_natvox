@@ -268,6 +268,12 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
   .btn.pref i {
     background-position: -250px -16px;
   }
+  .btn.follow i {
+    background-position: -193px 0px;
+  }
+  .btn.invite i {
+    background-position: -156px -46px;
+  }
 
 .tltip { 
   position: absolute;
@@ -367,6 +373,7 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
     padding: 9px 0;
     }
     .sh-box > .title h3 { 
+      font-weight: bold;
       color: #2d2d2d;
       font-size: 12px;
       text-transform: uppercase;
@@ -404,3 +411,183 @@ input.custom {
 input.custom.error {
     border-color: #e61e0f;
   }
+
+.tabs { 
+  background: #f8f8f8;
+  position: relative;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  padding: 0 10px;
+  }
+  .tabs ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .tabs li {
+    display: inline-block;
+    margin: 0;
+    padding: 0 20px;
+    list-style: none;
+    color: #505050;
+    font-size: 12px;
+    border: 1px solid #d0d0d0;
+    height: 34px;
+    line-height: 34px;
+    background: url("../img/x.png") repeat-x 0 -999px; 
+    cursor: pointer;   
+    margin: -1px -1px -1px 0;
+  }
+  .tabs li:hover {
+    background-position: 0 -1073px;    
+  }
+  .tabs li.active {
+    color: #000;
+    background-position: 0 -1036px;
+    cursor: default;
+  }
+
+.bottom-content {
+  background: #f8f8f8;
+  -webkit-border-radius: 0 0 3px 3px;
+          border-radius: 0 0 3px 3px;
+  } 
+  .bottom-content .box-title {
+    position: relative;
+    padding: 20px 15px 20px 25px;
+  }
+  .bottom-content .box-title h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: #2d2d2d;
+    margin: 0;
+  }
+  .bottom-content .sort {
+    color: #848484;
+    height: 25px;
+    position: absolute;
+    top: 11px;
+    right: 15px;
+  }
+  .bottom-content .sort .dd-box {
+    position: relative;
+    margin-left: 10px;
+  }
+  .bottom-content .sort .btn {
+    padding-left: 10px;
+    border-color: #a3a3a3;
+    width: 60px;
+  }
+  .bottom-content .pages {
+    padding: 12px 0 30px;
+  }
+
+.pages { 
+  text-align: center;
+  }
+  .pages a {
+    margin: 0 1px;
+    display: inline-block;
+    vertical-align: top;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #d0d0d0;
+    color: #505050;
+    font-size: 12px;
+    line-height: 26px;
+    background: url("../img/x.png") repeat-x 0 -1110px; 
+    position: relative;
+  }
+  .pages a:hover {
+    background-position: 0 -1137px;    
+  }
+  .pages a.active {
+    color: #ffffff;
+    background-position: 0 -1164px;
+  }
+  .pages a i {
+    display: inline-block;
+    width: 6px;
+    height: 10px;
+    background: url("../img/sprite.png") no-repeat 100px 100px transparent;
+  }
+  .pages a.prev i {
+    background-position: -185px -34px;
+  }
+  .pages a.next i {
+    background-position: -176px -34px;
+  }
+
+.person {
+  /*display: table;*/
+  display: inline-block;
+  border: 1px solid #e8e8e8;
+  background: #fff;
+  padding: 3px;
+  position: relative;
+  }
+  .person:hover {
+    border: 2px solid #999999;
+    padding: 2px;
+  }
+  .person .img {
+    display: table-cell;
+    vertical-align: top;
+    height: inherit;    
+    }
+    .person .img img {
+      display: block;
+    }
+  .person .txt {
+    display: table-cell;
+    vertical-align: top;
+    height: inherit;
+  }
+  .person .close {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    padding: 4px;
+    top: 1px;
+    right: 1px;
+  }
+  .person .close i {
+    display: block;
+    width: 7px;
+    height: 7px;
+    background: url("../img/sprite.png") no-repeat -270px -35px transparent;
+    opacity: 0.55;
+  }
+  .person .close:hover i {
+    background-position: -286px -35px;    
+    opacity: 1;
+  }
+  .person:hover .close {
+    top:0;
+    right: 0;
+  }
+
+.msg-box {
+  border: 1px solid #e8e8e8;
+  display: inline-block;
+  background: #FFF;
+  -webkit-box-shadow:  0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+          box-shadow:  0px 1px 2px 0px rgba(0, 0, 0, 0.2);  
+  padding: 6px;
+  }
+  .msg-box .img {
+    display: table-cell;
+    vertical-align: top;
+    height: inherit; 
+    padding-right: 9px;
+   }
+   .msg-box .img img {
+      display: block;
+    }
+  .msg-box .txt {
+    display: table-cell;
+    vertical-align: top;
+    height: inherit;
+  }    

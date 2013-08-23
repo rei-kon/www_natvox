@@ -63,23 +63,36 @@ $(document).ready( function(){
 	    }
 	});
 	
-	$('#simple-carousel').jcarousel({
-        scroll: 3,
-        animation: "150",
-        buttonNextHTML: "<div class='arr next'><i></i></div>",
-        buttonPrevHTML: "<div class='arr prev'><i></i></div>"
-    });
+	if ( $('#simple-carousel').length > 0 ) {
+		$('#simple-carousel').jcarousel({
+	        scroll: 3,
+	        animation: "150",
+	        buttonNextHTML: "<div class='arr next'><i></i></div>",
+	        buttonPrevHTML: "<div class='arr prev'><i></i></div>"
+	    });
+	};
 
-    $('#top-carousel').jcarousel({
-        scroll: 1,
-        animation: "150",
-        initCallback: topcarousel_initCallback,
-        itemLoadCallback: topcarousel_trigger
-    });
+	if ( $('#top-carousel').length > 0 ) {
+	    $('#top-carousel').jcarousel({
+	        scroll: 1,
+	        animation: "150",
+	        initCallback: topcarousel_initCallback,
+	        itemLoadCallback: topcarousel_trigger
+	    });
+	};    
 
     $('.fancybox').fancybox({
 		padding: 0,
 		arrows : false
+	});
+
+	$('.tabs li').on('click', function(){
+		var $this = $(this);
+		var tabID = '#'+ $this.attr('rel');
+		$('.tabs li').removeClass('active');
+		$this.addClass('active');
+		$('.tabs-content .one-tab').hide();
+		$(tabID).show();
 	});
 
 }); /* end of document.ready */

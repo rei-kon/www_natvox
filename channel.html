@@ -264,7 +264,7 @@
 						<a href="#" class="pref"><i></i></a>
 					</div>
 					<div class="start">
-						<a class="btn btn-tp1 green" href="#">Start broadcast in Channel </a>
+						<a class="btn btn-tp1 green fancybox" href="#start-bc">Start broadcast in Channel </a>
 					</div>
 				</div>
 			</div>
@@ -1022,6 +1022,88 @@
 		</div>
 	</div>
 </div> <!-- .footer -->
+
+<!-- lightbox forms here -->
+<div class="hidden" >
+	<div id="start-bc" class="lb-form start-bc-form">
+		<div class="bc-name">
+			<div class="txt">
+				<h3>Start broadcast in this Channel</h3>	
+				<p>Science &amp; Technology Channel</p>
+			</div>
+			<div class="img">
+				<img src="img/no-image.gif">
+			</div>
+		</div>
+		
+		<form action="#">
+
+			<span class="dd-box">
+				<a class="btn btn-tp6 dd" href="#" id="f-bcst">Science &amp; Technology Channel</a>
+			</span>
+			<span class="dd-box">
+				<a class="btn btn-tp6 dd" href="#" id="f-category">Select Category</a>
+			</span>
+			<span class="dd-box">
+				<a class="btn btn-tp6 dd" href="#" id="f-upload">Upload image</a>
+			</span>
+
+			<div class="tbl">
+				<div class="labels">
+					<div class="lbl t-name">
+						<label for="f-name">Enter name of the broadcast</label>
+					</div>
+					<div class="lbl t-date">
+						<label for="f-date">Select date</label>
+					</div>
+					<div class="lbl t-time">
+						<label for="f-time">Select time</label>
+					</div>
+					<div class="lbl t-privacy">
+						<label for="f-privacy">Privacy</label>
+					</div>
+				</div>
+				<div class="inputs">
+					<div class="inp">
+						<input id="f-name" class="custom">
+					</div>
+					<div class="inp">
+						<span class="dd-box">
+							<a class="btn btn-tp6 dd" href="#" id="f-date">12 January 2013</a>
+						</span>
+					</div>
+					<div class="inp">
+						<span class="dd-box">
+							<a class="btn btn-tp6 dd" href="#" id="f-time">12:00</a>
+						</span>
+					</div>
+					<div class="inp">
+						<span class="dd-box">
+							<a class="btn btn-tp6 dd" href="#" id="f-privacy">Selected people</a>
+						</span>
+					</div>	
+				</div>
+			</div>
+
+			<a class="add closed" href="#">Add description and/or category</a>
+			<!-- <a class="add opened" href="#">Add description and/or category</a> -->
+
+			<div class="hidden add-descr-box">
+				<div class="h">
+					<label for="f-dscr-category">Category</label>
+					<span class="dd-box">
+						<a class="btn btn-tp6 dd" href="#" id="f-dscr-category">Select Category</a>
+					</span>
+				</div>
+				<textarea class="custom" id="f-bc-descr" placeholder="Enter description here..."></textarea>
+			</div>
+
+			<p class="submit">
+				<input type="submit" value="Start broadcast" class="btn btn-tp1 green">
+			</p>
+		</form>	
+	</div>
+</div>
 
 </body>
 </html>	

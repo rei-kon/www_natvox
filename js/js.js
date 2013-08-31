@@ -95,5 +95,13 @@ $(document).ready( function(){
 		$(tabID).show();
 	});
 
+	$('.start-bc-form .add').on('click', function(e){
+	    e.preventDefault();
+		var $this = $(this);
+		$this.toggleClass('opened closed');
+		$this.next().slideToggle();
+		// $this.next().show();
+	});
+
 }); /* end of document.ready */
 

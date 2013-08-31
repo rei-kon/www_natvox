@@ -239,6 +239,46 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
     opacity: 1;
   }  
 
+  .btn-tp6 {
+    height: 29px;
+    line-height: 30px;
+    padding: 0 10px;
+    display: inline-block;
+    color: #4b4b4b;
+    font-size: 12px;
+    border: 1px solid #aeaeae;
+    background: url("../img/x.png") repeat-x 0 -1217px;
+    -webkit-box-shadow:  0px 1px 2px 0px rgba(0,0,0,0.3);
+            box-shadow:  0px 1px 2px 0px rgba(0,0,0,0.3);
+    }
+    .btn-tp6:active,
+    .btn-tp6:focus,
+    .btn-tp6:hover {
+      outline: none;
+    }
+    .btn-tp6:hover {
+      color: #1a1a1a;
+      background-position: 0 -1247px;
+    }
+    /* styles for dropdown list button */
+    .btn-tp6.dd {
+      padding-right: 20px;
+    }
+    .btn-tp6.dd::before {
+      content: "";
+      position: absolute;
+      right: 10px;
+      top: 13px;
+      display: block;
+      width: 7px;
+      height: 4px;
+      background: url("../img/sprite.png") no-repeat -250px -32px; 
+      opacity: 0.5;
+    }
+    .btn-tp4.dd:hover::before {
+      opacity: 1;
+    }
+
 .btn.icon {
   padding-left: 30px;
   }
@@ -411,6 +451,35 @@ input.custom {
 input.custom.error {
     border-color: #e61e0f;
   }
+
+textarea.custom {
+  padding: 10px;
+  border: 1px solid #aeaeae;  
+  background: #f9f9f9;
+  color: #090909;
+  font-size: 12px;
+  line-height: 16px;
+}  
+      textarea.custom::-webkit-input-placeholder {
+          color: #8c8c8c;
+          font-style: italic;
+          opacity: 1;
+      }
+      textarea.custom:-moz-placeholder {
+          color: #8c8c8c;
+          font-style: italic;
+          opacity: 1;
+      }
+      textarea.custom::-moz-placeholder {
+          color: #8c8c8c;
+          font-style: italic;
+          opacity: 1;
+      }
+      textarea.custom:-ms-input-placeholder { 
+          color: #8c8c8c;
+          font-style: italic;
+          opacity: 1;
+      }
 
 .tabs { 
   background: #f8f8f8;

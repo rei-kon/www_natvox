@@ -140,9 +140,18 @@
 		}
 		.start-bc-form .submit .btn { padding: 0 20px; }
 
-	#f-bcst { width: 238px; margin-right: 6px;}
-	#f-category {width: 131px; margin-right: 6px;}
+	.start-bc-form .dd-box { 
+		display: inline-block;
+		vertical-align: top;
+	}
+	.start-bc-form .dd-box.pr {padding-right: 10px;}
+
+	#f-bcst { width: 238px; /*margin-right: 6px;*/}
+	#f-category {width: 131px; /*margin-right: 6px;*/}
 	#f-upload { width: 117px;}
+
+	#f-bcst-sel { width: 232px; }
+	#f-category-sel {width: 127px;}
 
 	.start-bc-form .tbl {
 		display: table;
@@ -154,6 +163,7 @@
 	}
 	.start-bc-form .tbl > div > div {
 		display: table-cell;
+		vertical-align: top;
 	}
 
 	.start-bc-form .tbl label {
@@ -166,16 +176,19 @@
 	}
 
 	.start-bc-form .t-name { width: 217px; padding-right: 11px;}
-	#f-name { width: 195px;}
+	#f-name { width: 183px;}
 
 	.start-bc-form .t-date { width: 127px; padding-right: 11px;}
 	#f-date { width: 95px;}
 
 	.start-bc-form .t-time { width: 84px; padding-right: 11px;}
 	#f-time { width: 52px; }
+	#f-time-sel { width: 48px;}
 
 	.start-bc-form .t-privacy { width: 113px; }
 	#f-privacy { width: 111px; }
+	#f-privacy-sel { width: 117px; }
+	/*#dk_container_f-privacy-sel { width: 117px;}*/
 
 	.start-bc-form .add {
 		position: relative;
@@ -213,8 +226,11 @@
 	    font-size: 13px;
 	    line-height: 16px;
 	    margin-right: 6px;
+	    padding-top: 8px;
+	    display: inline-block;
 	}
 	#f-dscr-category { width: 170px; }
+	#f-dscr-category-sel { width: 166px; }
 	#f-bc-descr {
 		width: 580px;
 		height: 48px;
@@ -228,7 +244,7 @@
 	right: 0;
 	top:50%;
 	margin-top: -46px;
-	width: 27px;
+	width: 26px;
 	height: 92px;	
 	-webkit-box-shadow:  -1px 0px 3px 0px rgba(0, 0, 0, 0.2);
   	box-shadow:  -1px 0px 3px 0px rgba(0, 0, 0, 0.2);
@@ -240,6 +256,11 @@
 		height: 90px;
 		border: 1px solid #d0d0d0;
 		background: url("../img/x.png") repeat-x 0 -394px; 
+		border-right: 0;
+	}
+	.feedback a:active,
+	.feedback a:focus {
+		outline: none;
 	}
 	.feedback a i {
 		display: block;
@@ -630,10 +651,15 @@
 			color: #3a3a3a;
 			text-transform: uppercase;
 			width: 100%;
+			vertical-align: top;
 		}
 		.home-top .events .bn {
 			display: table-cell;
-			padding-right: 2px;
+			/*padding-right: 2px;*/
+		}
+		.home-top .events .bn .wr {
+			position: relative;
+			padding-top: 3px;
 		}
 
 		.home-top .events .list {

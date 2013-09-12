@@ -5,8 +5,8 @@
 
 	<title>NatVox</title>
 
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> 
 
 	<link href="css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="css/common.css" rel="stylesheet" type="text/css">
@@ -22,6 +22,10 @@
 	<!-- fancybox plugin for dialog windows -->
 	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
 	<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css">	
+
+	<!-- dropkick plugin for styling drop-down lists -->
+	<script type="text/javascript" src="js/jquery.dropkick-min.js	"></script>
+	<link href="css/jquery.dropkick.css" rel="stylesheet" type="text/css">
 
 	<script type="text/javascript" src="js/js.js"></script>
 
@@ -211,7 +215,14 @@
 			</form>
 		</div>
 		<div class="btn-set">
-			<a href="#" class="btn btn-tp4 dd">Catalogue</a>
+			<select class="styled tp4" id="opt2">
+				<option selected="selected">Catalogue</option>
+				<option>Lorem ipsum</option>
+				<option>Dolor sit amet</option>
+				<option>Lorem ipsum</option>
+				<option>Dolor sit amet</option>				
+			</select>
+			<!-- <a href="#" class="btn btn-tp4 dd">Catalogue</a> -->
 			<a href="#" class="btn btn-tp4">Channels</a>			
 		</div>
 	</div> <!-- .nav -->
@@ -451,10 +462,15 @@
 					<div class="box-title">
 						<h2>broadcasts</h2>
 						<div class="sort">
-							Sort by: 
-							<span class="dd-box">
-								<a href="#" class="btn btn-tp4 dd">Date</a>
-							</span>
+							<div class="label">Sort by: </div>
+							<div class="dd-box">
+								<!-- <a href="#" class="btn btn-tp4 dd">Date</a> -->
+								<select class="styled tp4-1" id="opt3">
+									<option>Date</option>
+									<option>Time</option>
+									<option>Name</option>
+								</select>
+							</div>
 						</div>
 					</div>
 
@@ -1020,7 +1036,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>	
 </div> <!-- .footer -->
 
 <!-- lightbox forms here -->
@@ -1038,13 +1054,23 @@
 		
 		<form action="#">
 
-			<span class="dd-box">
-				<a class="btn btn-tp6 dd" href="#" id="f-bcst">Science &amp; Technology Channel</a>
-			</span>
-			<span class="dd-box">
-				<a class="btn btn-tp6 dd" href="#" id="f-category">Select Category</a>
-			</span>
-			<span class="dd-box">
+			<span class="dd-box pr">
+				<!-- <a class="btn btn-tp6 dd" href="#" id="f-bcst">Science &amp; Technology Channel</a> -->
+				<select class="styled" id="f-bcst-sel">
+					<option selected="selected">Science &amp; Technology Channel</option>
+					<option>Biology Channel</option>
+					<option>Fun and Humour Channel</option>
+					<option>Animal Planet Channel</option>
+				</select>
+			</span><span class="dd-box pr">
+				<!-- <a class="btn btn-tp6 dd" href="#" id="f-category">Select Category</a> -->
+				<select class="styled" id="f-category-sel">
+					<option selected="selected">Select Category</option>
+					<option>Science</option>
+					<option>News</option>
+					<option>Fun</option>
+				</select>
+			</span><span class="dd-box">
 				<a class="btn btn-tp6 dd" href="#" id="f-upload">Upload image</a>
 			</span>
 
@@ -1068,18 +1094,29 @@
 						<input id="f-name" class="custom">
 					</div>
 					<div class="inp">
-						<span class="dd-box">
+						<span class="dd-box pr">
 							<a class="btn btn-tp6 dd" href="#" id="f-date">12 January 2013</a>
 						</span>
 					</div>
 					<div class="inp">
-						<span class="dd-box">
-							<a class="btn btn-tp6 dd" href="#" id="f-time">12:00</a>
+						<span class="dd-box pr">
+							<!-- <a class="btn btn-tp6 dd" href="#" id="f-time">12:00</a> -->
+							<select class="styled" id="f-time-sel">
+								<option selected="selected">12:00</option>
+								<option>13:00</option>
+								<option>14:00</option>
+								<option>15:00</option>
+							</select>
 						</span>
 					</div>
 					<div class="inp">
 						<span class="dd-box">
-							<a class="btn btn-tp6 dd" href="#" id="f-privacy">Selected people</a>
+							<!-- <a class="btn btn-tp6 dd" href="#" id="f-privacy">Selected people</a> -->
+							<select class="styled" id="f-privacy-sel">
+								<option selected="selected">Selected people</option>
+								<option>Public</option>
+								<option>Private</option>
+							</select>
 						</span>
 					</div>	
 				</div>
@@ -1092,7 +1129,13 @@
 				<div class="h">
 					<label for="f-dscr-category">Category</label>
 					<span class="dd-box">
-						<a class="btn btn-tp6 dd" href="#" id="f-dscr-category">Select Category</a>
+						<!-- <a class="btn btn-tp6 dd" href="#" id="f-dscr-category">Select Category</a> -->
+						<select class="styled" id="f-dscr-category-sel">
+							<option selected="selected">Select Category</option>
+							<option>Science</option>
+							<option>News</option>
+							<option>Fun</option>
+						</select>
 					</span>
 				</div>
 				<textarea class="custom" id="f-bc-descr" placeholder="Enter description here..."></textarea>
@@ -1104,6 +1147,8 @@
 		</form>	
 	</div>
 </div>
+
+
 
 </body>
 </html>	

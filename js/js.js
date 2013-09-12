@@ -83,7 +83,10 @@ $(document).ready( function(){
 
     $('.fancybox').fancybox({
 		padding: 0,
-		arrows : false
+		arrows : false,
+		afterShow: function() {
+			$('select.styled').dropkick('refresh');
+		}
 	});
 
 	$('.tabs li').on('click', function(){
@@ -93,6 +96,7 @@ $(document).ready( function(){
 		$this.addClass('active');
 		$('.tabs-content .one-tab').hide();
 		$(tabID).show();
+		$('select.styled').dropkick('refresh');
 	});
 
 	$('.start-bc-form .add').on('click', function(e){
@@ -102,6 +106,8 @@ $(document).ready( function(){
 		$this.next().slideToggle();
 		// $this.next().show();
 	});
+
+	$('select.styled').dropkick();
 
 }); /* end of document.ready */
 

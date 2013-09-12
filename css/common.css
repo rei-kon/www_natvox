@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-	font-family: Arial, sans-serif;
+	font-family:  Arial, 'Helvetica',sans-serif;
 	background: #FFF;
 }
 
@@ -540,9 +540,18 @@ textarea.custom {
     top: 11px;
     right: 15px;
   }
+  .bottom-content .sort .label {
+    position: relative;
+    padding-top: 5px;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 10px;
+  }
   .bottom-content .sort .dd-box {
     position: relative;
-    margin-left: 10px;
+    display: inline-block;
+    vertical-align: top;
+    /*margin-left: 10px;*/
   }
   .bottom-content .sort .btn {
     padding-left: 10px;

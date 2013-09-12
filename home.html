@@ -5,8 +5,8 @@
 
 	<title>NatVox</title>
 
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">  
 
 	<link href="css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="css/common.css" rel="stylesheet" type="text/css">
@@ -25,7 +25,11 @@
 
 	<!-- fancybox plugin for dialog windows -->
 	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
-	<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css">			
+	<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css">		
+
+	<!-- dropkick plugin for styling drop-down lists -->
+	<script type="text/javascript" src="js/jquery.dropkick-min.js	"></script>
+	<link href="css/jquery.dropkick.css" rel="stylesheet" type="text/css">	
 
 	<script type="text/javascript" src="js/js.js"></script>
 
@@ -255,7 +259,14 @@
 			</form>
 		</div>
 		<div class="btn-set">
-			<a href="#" class="btn btn-tp4 dd">Catalogue</a>
+			<select class="styled tp4" id="opt2">
+				<option selected="selected">Catalogue</option>
+				<option>Lorem ipsum</option>
+				<option>Dolor sit amet</option>
+				<option>Lorem ipsum</option>
+				<option>Dolor sit amet</option>				
+			</select>
+			<!-- <a href="#" class="btn btn-tp4 dd">Catalogue</a> -->
 			<a href="#" class="btn btn-tp4">Channels</a>			
 		</div>
 	</div> <!-- .nav -->
@@ -282,7 +293,15 @@
 			<div class="title">
 				<h3>upcoming events</h3>
 				<div class="bn">
-					<a href="#" class="btn btn-tp5 dd">Popular</a>
+					<div class="wr">
+						<!-- <a href="#" class="btn btn-tp5 dd">Popular</a> -->
+						<select class="styled tp5" id="opt1">
+							<option selected="selected">Popular</option>
+							<option>Newest</option>
+							<option>Live</option>
+							<option>Something else</option>
+						</select>
+					</div>
 				</div>
 			</div>
 			<div class="list" id="events-list">

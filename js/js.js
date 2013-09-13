@@ -19,13 +19,7 @@ $(document).ready( function(){
 
 
 	/* custom scrollbar init  */
-	$("#new-msgs-list").mCustomScrollbar({
-		scrollInertia:300,
-		mouseWheel:true,
-		mouseWheelPixels:"auto"
-	});
-
-	$("#events-list").mCustomScrollbar({
+	$("#new-msgs-list, #events-list, #all-person-list").mCustomScrollbar({
 		scrollInertia:300,
 		mouseWheel:true,
 		mouseWheelPixels:"auto"
@@ -86,6 +80,7 @@ $(document).ready( function(){
 		arrows : false,
 		afterShow: function() {
 			$('select.styled').dropkick('refresh');
+			$('#all-person-list').mCustomScrollbar("update")
 		}
 	});
 
@@ -108,6 +103,10 @@ $(document).ready( function(){
 	});
 
 	$('select.styled').dropkick();
+
+	$('.private-box .person').on('click',function(){
+		$(this).toggleClass('selected');
+	});
 
 }); /* end of document.ready */
 

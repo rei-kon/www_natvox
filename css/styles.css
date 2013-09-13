@@ -139,6 +139,7 @@
 		margin-bottom: 0;
 		}
 		.start-bc-form .submit .btn { padding: 0 20px; }
+		.start-bc-form .centered { text-align: center; }
 
 	.start-bc-form .dd-box { 
 		display: inline-block;
@@ -197,7 +198,7 @@
 		line-height: 16px;
 		margin-bottom: 17px;
 	}
-	.start-bc-form .add::before {
+	.start-bc-form .add:before {
 		content: "";
 		display: block;
 		position: absolute;
@@ -207,11 +208,11 @@
 		height: 6px;
 		background: url("../img/sprite.png") no-repeat 100px 100px;
 	}
-	.start-bc-form .add.closed::before {
+	.start-bc-form .add.closed:before {
 		background-position: -193px -46px;
 		
 	}
-	.start-bc-form .add.opened::before {
+	.start-bc-form .add.opened:before {
 		background-position: -204px -46px;
 	}
 
@@ -236,6 +237,111 @@
 		height: 48px;
 	}
 
+	.private-box {
+		padding-top: 10px;
+		padding-bottom: 15px;
+		}
+		.private-box .box {
+			display: table-cell;
+			vertical-align: top;
+			}
+			.private-box .box h3 {
+				font-size: 16px;
+				line-height: 30px;
+				margin: 0;
+			}
+			.private-box .shade {
+				-webkit-box-shadow:  0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+						box-shadow:  0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+			}
+		.private-box .all {
+
+			}
+			.private-box .people-list {
+				width: 244px;
+				height: 335px;
+				padding: 5px;
+				border: 1px solid #e8e8e8;				
+			}
+			.private-box .person {
+				display: block;
+				margin-bottom: 4px;
+				-webkit-box-shadow:  0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+						box-shadow:  0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+			}
+			.private-box .person .txt {
+				width: 180px;
+				}
+				.private-box .person .name {
+					font-size: 16px;
+					padding: 13px 0 0 12px;
+				}
+			.private-box .person.selected {
+				background: #292929;
+				color: #ffffff;
+			}
+
+		.private-box .buttons {
+			padding: 30px 9px 0 9px;
+			width: 72px;
+			}
+			.private-box .buttons .btn {
+				width: 52px;
+				margin-bottom: 5px;
+			}
+			.private-box .add-q:before {
+				content: "";
+				display: block;
+				position: absolute;
+				right: 10px;
+				top: 9px;
+				width: 9px;
+				height: 7px;
+				background: url("../img/sprite.png") no-repeat -212px -51px;
+			}
+		.private-box .access {}
+			.private-box .access .people-list {
+				height: 267px;
+			}
+			.private-box .invite {
+				border: 1px solid #e8e8e8;	
+				border-top: 0;
+				padding: 5px 9px 9px 9px;
+				position: relative;
+				}	
+				.private-box .invite p {
+					color: #090909;
+					font-size: 13px;
+					line-height: 16px;
+					margin: 0;
+					padding: 0 0 6px 0;
+				}
+				.private-box .invite .inp {
+					position: relative;
+					}
+					.private-box .invite input {
+						width: 189px;
+						padding-right: 35px;
+					}
+					.private-box .invite .btn {
+						position: absolute;
+						bottom: 5px;
+						right: 1px;
+						display: block;
+						width: 27px;
+						height: 21px;
+						border-left: 1px solid #d2d2d2;
+					}
+					.private-box .invite .btn:before {
+						content: "";
+						display: block;						
+						width: 9px;
+						height: 7px;
+						background: url("../img/sprite.png") no-repeat -230px -51px;
+						position: absolute;
+						top:7px;
+						left: 9px;
+					}
 
 /* // forms */
 
@@ -389,7 +495,7 @@
 			top: 41px;
 			right: 4px;
 		}
-		.header .box-r.login-box .lb .tltip::before {
+		.header .box-r.login-box .lb .tltip:before {
 			width: 87px;
 			right: -12px;
 			background-position: 25px -83px;			
@@ -828,7 +934,7 @@
 		position: relative;
 		vertical-align: top;
 	}
-	.b-cst .b-cst-item.live::before {
+	.b-cst .b-cst-item.live:before {
 		content: "";
 		position: absolute;
 		top: 0;
@@ -838,7 +944,7 @@
 		height: 46px;
 		background: url("../img/eng.png") no-repeat -104px 0px transparent;
 	}
-	.b-cst .b-cst-item.live:hover::before {
+	.b-cst .b-cst-item.live:hover:before {
 		top:-1px;
 		right: -1px;
 	}
@@ -1105,7 +1211,7 @@
 					.ch-top .ch-titile .info .type.closed {
 						padding-left: 16px;
 					}
-						.ch-top .ch-titile .info .type.closed::before {
+						.ch-top .ch-titile .info .type.closed:before {
 							content: "";
 							display: block;
 							width: 16px;

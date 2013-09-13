@@ -191,7 +191,7 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
   .btn-tp4.dd {
     padding-right: 30px;
   }
-  .btn-tp4.dd::before {
+  .btn-tp4.dd:before {
     content: "";
     position: absolute;
     right: 11px;
@@ -202,7 +202,7 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
     background: url("../img/sprite.png") no-repeat -250px -32px; 
     opacity: 0.5;
   }
-  .btn-tp4.dd:hover::before {
+  .btn-tp4.dd:hover:before {
     opacity: 1;
   }
 
@@ -224,7 +224,7 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
   .btn-tp5.dd {
     padding-right: 30px;
   }
-  .btn-tp5.dd::before {
+  .btn-tp5.dd:before {
     content: "";
     position: absolute;
     right: 11px;
@@ -235,7 +235,7 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
     background: url("../img/sprite.png") no-repeat -250px -32px; 
     opacity: 0.5;
   }
-  .btn-tp5.dd:hover::before {
+  .btn-tp5.dd:hover:before {
     opacity: 1;
   }  
 
@@ -264,7 +264,7 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
     .btn-tp6.dd {
       padding-right: 20px;
     }
-    .btn-tp6.dd::before {
+    .btn-tp6.dd:before {
       content: "";
       position: absolute;
       right: 10px;
@@ -275,7 +275,7 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
       background: url("../img/sprite.png") no-repeat -250px -32px; 
       opacity: 0.5;
     }
-    .btn-tp4.dd:hover::before {
+    .btn-tp4.dd:hover:before {
       opacity: 1;
     }
 
@@ -329,7 +329,7 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
     font-size: 12px;
     color: #747474;
   }
-  .tltip.arr-top::before {
+  .tltip.arr-top:before {
     content: "";
     width: 31px;
     height: 18px;

@@ -1502,3 +1502,26 @@
 				-o-transition: all 150ms ease-in-out;
 				transition: all 150ms ease-in-out;
 			}
+
+	.closed-channel { 
+		text-align: center;
+		padding-bottom: 100px;
+		padding-top: 30px;
+		}
+		.closed-channel .icon {
+			display: inline-block;
+			width: 39px;
+			height: 39px;
+			background: url("../img/sprite.png") no-repeat -390px -46px;
+		}
+		.closed-channel h4 {
+			font-size: 16px;
+			line-height: 20px;
+			color: #5c5c5c;
+			margin: 6px 0 30px 0; 
+		}
+		.closed-channel p {
+			height: 25px;
+			line-height: 25px;
+			margin: 0;
+		}

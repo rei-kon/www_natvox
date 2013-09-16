@@ -108,5 +108,11 @@ $(document).ready( function(){
 		$(this).toggleClass('selected');
 	});
 
+	$('.admission-btn').on('click', function(e){
+	    e.preventDefault();
+		$(this).next().show();
+		$(this).hide();
+	});
+
 }); /* end of document.ready */
 

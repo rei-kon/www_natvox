@@ -521,6 +521,9 @@ textarea.custom {
   -webkit-border-radius: 0 0 3px 3px;
           border-radius: 0 0 3px 3px;
   } 
+  .closed .bottom-content {
+    height: 70px;
+  }
   .bottom-content .box-title {
     position: relative;
     padding: 20px 15px 20px 25px;
@@ -532,7 +535,7 @@ textarea.custom {
     line-height: 18px;
     color: #2d2d2d;
     margin: 0;
-  }
+  }  
   .bottom-content .sort {
     color: #848484;
     height: 25px;

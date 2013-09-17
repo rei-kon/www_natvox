@@ -1504,6 +1504,7 @@
 			}
 
 	.closed-channel { 
+		background: #F8F8F8;
 		text-align: center;
 		padding-bottom: 100px;
 		padding-top: 30px;

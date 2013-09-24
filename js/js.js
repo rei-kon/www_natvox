@@ -14,12 +14,37 @@ function topcarousel_trigger(carousel, state) {
 	$('.jcarousel-control a').eq(num-1).addClass('active');
 }
 
+function setChatHeight() {
+	var h = $('#video').height();
+	var chat = $('.chat');
+	var list = chat.find('.comments-list');
+	var chatH = h - parseInt( chat.css('padding-top') ) - parseInt( chat.css('padding-bottom') ) - 6;
+	var listH = chatH - parseInt( chat.find('.title').outerHeight() ) 
+					  - parseInt( chat.find('.send-comment').outerHeight() ) 
+					  - parseInt( list.css('margin-bottom') );
+	chat.height( chatH );
+	list.height( listH );
+	updateChat();
+}
+
+function updateChat() {
+	$("#chat-list").mCustomScrollbar("update");
+
+	setTimeout( function() { 
+		$("#chat-list").mCustomScrollbar("scrollTo",'bottom'); 
+	}, 500);
+	
+}
 
 $(document).ready( function(){
 
 
+	if( $('#video').length > 0 ){
+		setChatHeight();
+	}
+
 	/* custom scrollbar init  */
-	$("#new-msgs-list, #events-list, #all-person-list, #popular-channels-list, #new-channels-list").mCustomScrollbar({
+	$("#new-msgs-list, #events-list, #all-person-list, #popular-channels-list, #new-channels-list, #chat-list").mCustomScrollbar({
 		scrollInertia:300,
 		mouseWheel:true,
 		mouseWheelPixels:"auto"

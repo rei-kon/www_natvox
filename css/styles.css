@@ -757,6 +757,9 @@
 		.catalogue-page .page-title h1 {
 			background: url("../img/title-cat.png") no-repeat 0 0;
 		}
+		.live-page .page-title {
+			background: #F8F8F8;
+		}
 		.live-page .page-title h1 {
 			background: url("../img/title-bcst.png") no-repeat 0 0;
 		}
@@ -1838,6 +1841,281 @@
 			padding-bottom: 15px;
 			margin-bottom:0;
 		}
+		.live-page .cat-box {
+			border:0;
+		}
 		.live-page .cat-box .b-cst  {
 			border-bottom: 0
 		}
+
+.broadcast-page {}		
+	.broadcast-page .b-cst {
+		margin-bottom: 30px;
+	}
+	.broadcast-page .b-cst .list {
+		padding-bottom: 15px;
+	}
+	.comments-box {
+		margin-bottom: 25px;
+	}
+	.comments-list {
+		padding: 10px;
+		margin-bottom: 10px;
+	}
+	.comments-list .one {
+		border: 1px solid #e8e8e8;
+		background: #FFF;
+		margin-bottom: 4px;
+		padding: 5px;
+		}
+		.comments-list .one .img {
+			display: table-cell;
+			vertical-align: top;
+			width: 45px;
+			}
+			.comments-list .one .img img {
+				display: block;
+			}
+		.comments-list .one .txt {
+			display: table-cell;
+			vertical-align: top;
+			/*width: 100%;*/
+			font-size: 12px;
+			line-height: 14px;
+			color: #181818;
+			}
+			.comments-list .one .info {
+				font-size: 11px;
+				margin-bottom: 5px;
+				}
+				
+				.comments-list .one .time {
+					margin-left: 15px;
+					padding-left: 15px;
+					display: inline-block;
+					position: relative;
+				}
+				.comments-list .one .time i {
+					display: block;
+					position: absolute;
+					left: 0px;
+					top: 1px;
+					width: 11px;
+					height: 11px;
+					background: url("../img/sprite.png") no-repeat -285px -18px;
+					opacity: 0.4;
+				}
+			.comments-list .one .txt p {
+				margin: 5px 0 0 0;
+			}
+
+	.send-comment {
+		padding: 10px;
+		position: relative;
+		}
+		.send-comment input.custom {
+			width: 860px;
+			padding-right: 88px;
+			-webkit-box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.2) inset;
+       		        box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.2) inset;
+		}
+		.send-comment .submit {
+			position: absolute;
+			right: 13px;
+			top: 13px;
+		}
+		.send-comment ::-webkit-input-placeholder {
+		    color: #5d5d5d;
+		    font-style: italic;
+		    opacity: 0.6;
+		}
+		.send-comment :-moz-placeholder {
+		    color: #5d5d5d;
+		    font-style: italic;
+		    opacity: 0.6;
+		}
+		.send-comment ::-moz-placeholder {
+		    color: #5d5d5d;
+		    font-style: italic;
+		    opacity: 0.6;
+		}
+		.send-comment :-ms-input-placeholder { 
+		    color: #5d5d5d;
+		    font-style: italic;
+		    opacity: 0.6;
+		}
+
+	.bc-top-box {
+		margin-bottom: 25px;
+		}
+		.chat {
+			float: left;
+			border: 1px solid #e8e8e8;
+			width: 356px;
+			padding: 3px;
+			-webkit-box-shadow:  0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+          			box-shadow:  0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+		}
+		.chat .title {
+		    margin: 0;
+		    padding: 5px 0;
+		    position: relative;
+			}
+			.chat .title h3 {
+			    color: #2D2D2D;
+			    font-size: 12px;
+			    font-weight: bold;
+			    line-height: 18px;
+			    margin: 0;
+			    padding: 0 0px 0 5px;
+			    text-transform: uppercase;
+			}
+		.bc-top-box .comments-list {
+			padding: 0;
+			margin-bottom: 0;
+			overflow: hidden;
+			}
+			.bc-top-box .comments-list .one {
+				margin-bottom: 2px;
+			}
+			.bc-top-box .send-comment {
+				padding: 10px 1px 2px;
+			}
+			.bc-top-box .send-comment input.custom {
+				padding-right: 57px;
+				width: 285px;
+			}
+			.bc-top-box .send-comment .submit {
+				right: 4px;
+			}
+	.viewers {
+		clear: both;
+		padding-top: 10px;
+		padding-bottom: 3px;
+		}
+		.viewers .title {
+			border-top: 1px solid #efefef;
+			border-bottom: 1px solid #efefef;
+			padding: 8px 10px 8px 15px;
+		}
+		.viewers .count {
+			display: inline-block;
+			vertical-align: top;
+			line-height: 25px;
+			color: #2D2D2D;
+		    font-size: 12px;
+		    font-weight: bold;
+		}
+		.viewers a.all {
+			margin-left: 15px;
+			font-size: 11px;
+			line-height: 25px;
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			padding-right: 10px;
+		}
+		.viewers a.all:after {
+			content: "";
+			position: absolute;
+			right: 0;
+			top: 9px;
+			width: 5px;
+			height: 7px;
+			background: url("../img/sprite.png") no-repeat -271px -51px;	
+		}
+		.viewers .inv {
+			float: right;
+		}
+		.viewers .inv:after{
+			display: table;
+			content: "";
+			clear: both;
+		}
+
+	.video-box { 
+		float: left;		
+		position: relative;
+		width: 600px;
+		height: 386px;
+		padding: 0 5px 0 4px;
+	}
+	#video {
+		/*background: #efefef;	*/
+	}
+	.bc-info {
+		position: relative;
+		}
+		.bc-info .img {
+			position: relative;
+			display: table-cell;
+			vertical-align: top;
+			padding: 4px 10px 4px 4px;
+			}
+			.bc-info .img img {
+				display: block;
+			}
+		.bc-info .txt {
+			width: 100%;
+			position: relative;
+			display: table-cell;
+			vertical-align: top;
+			padding-bottom: 5px;
+			}
+			.bc-info .name {
+				font-size: 11px;
+				font-weight: bold;
+				line-height: 13px;
+				padding-top: 6px;
+			}
+			.bc-info h2 {
+				font-size: 24px;
+				line-height: 30px;
+				margin: 0;
+				padding-right: 150px;
+				color: #171717;
+			}
+			.bc-info .date {
+				font-size: 12px;
+				font-weight: bold;
+				color: #171717;
+			}
+			.bc-info .controls {
+				position: absolute;
+				right: 11px;
+				top: 11px;
+			}
+			.bc-info .date .type {
+				color: #595959;
+				margin-left: 20px;
+				position: relative;
+			}
+			.bc-info .date .type.closed {
+				margin-left: 33px;
+			}
+			.bc-info .date .type.closed i {
+				position: absolute;
+				left: -13px;
+				top: 2px;
+				display: block;
+				width: 10px;
+				height: 10px;
+				background: url("../img/sprite.png") no-repeat -180px -49px;	
+			}
+			.bc-info .controls a.pref {
+					display: inline-block;
+					margin-right: 9px;
+					position: relative;
+				}
+				.bc-info .controls a.pref i {
+					display: inline-block;
+					width: 16px;
+					height: 16px;
+					background: url("../img/sprite.png") no-repeat -156px -30px;
+					position: relative;
+					top:4px;
+					opacity: 0.7;
+				}
+				.bc-info .controls a.pref:hover i {
+					opacity: 1;
+				}

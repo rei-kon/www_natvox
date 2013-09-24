@@ -315,8 +315,10 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
     background-position: -156px -46px;
   }
 
-.tltip { 
+.tltip,
+.tooltp  { 
   position: absolute;
+  z-index: 50;
   display: none;
   background: #FFF;
   color: #747474;
@@ -325,7 +327,12 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
   -webkit-border-radius: 2px;
   border-radius: 2px; 
   }
-  .tltip .in {
+  .tooltp {
+    /*top: 50px;
+    left: 50px;*/
+  }
+  .tltip .in,
+  .tooltp .in {
     font-size: 12px;
     color: #747474;
   }
@@ -337,6 +344,15 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
     position: absolute;
     top: -18px;
     right: 13px;
+  }
+  .tooltp.arr-left:before {
+    content: "";
+    width: 16px;
+    height: 31px;
+    background: url("../img/sprite.png") no-repeat -31px -85px transparent;
+    position: absolute;
+    top: 12px;
+    left: -16px; 
   }
   .tt-menu {
     margin: 0;
@@ -371,6 +387,51 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
       -webkit-border-radius: 0 0 2px 2px;
       border-radius: 0 0 2px 2px; 
       }
+
+  .chnl-descr {
+    width: 230px;
+    padding: 12px 20px 20px;
+    }
+    .chnl-descr h3 {
+      font-size: 15px;
+      line-height: 18px;
+      color: #3a3a3a;
+      margin: 0;
+    }
+    .chnl-descr .closed {
+      font-size: 11px;
+      font-weight: bold;
+      color: #171717;
+      position: relative;
+      margin: 0;
+      }
+      .chnl-descr .closed i {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        top: 2px;
+        background: url("../img/sprite.png") no-repeat -180px -49px transparent;
+        width: 10px;
+        height: 10px;
+        margin-right: 4px;
+      }
+    .chnl-descr .author {
+      font-size: 11px;
+      line-height: 14px;
+      color: #808080;
+      margin: 10px 0 4px 0;
+    }
+    .chnl-descr .txt {
+      font-size: 12px;
+      line-height: 16px;
+      color: #171717;
+    }
+    .chnl-descr .txt p {
+      margin: 16px 0 0 0;
+    }
+    .chnl-descr .txt p:first-child {
+      margin-top: 0;
+    }
 
 
 .item {
@@ -672,3 +733,84 @@ textarea.custom {
     vertical-align: top;
     height: inherit;
   }    
+
+.one-channel {
+  /*display: table;*/
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #e8e8e8;
+  background: #fff;
+  padding: 3px;
+  position: relative;
+  -webkit-box-shadow:  0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+          box-shadow:  0px 1px 2px 0px rgba(0, 0, 0, 0.2);  
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  }
+  .one-channel:hover {
+    border: 2px solid #999999;
+    padding: 2px;
+  }
+  .one-channel .img {
+    display: table-cell;
+    vertical-align: top;
+    height: inherit;    
+    padding: 3px 0 3px 3px;
+    }
+    .one-channel .img img {
+      display: block;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      border: 1px solid #d5d5d5;
+    }
+  .one-channel .txt {
+    display: table-cell;
+    vertical-align: top;
+    height: inherit;
+    padding-left: 12px;
+    }
+    .one-channel .name {
+      font-size: 13px;
+      color: #3a3a3a;
+      line-height: 14px;
+      padding-right: 20px;
+    }
+    .one-channel .author {
+      font-size: 11px;
+      line-height: 13px;
+      color: #808080;
+      margin: 0;
+    }
+    .one-channel .info {
+      color: #323131;
+      font-size: 11px;
+      line-height: 13px;
+      position: relative;
+      }
+      .one-channel .followers {
+        position: relative;
+      }
+      .one-channel .followers i {
+        display: inline-block;
+        width: 15px;
+        height: 13px;
+        background: url("../img/sprite.png") no-repeat -194px -19px;
+        vertical-align: top;
+        position: relative;
+        top:-2px;
+      }
+      .one-channel .bscts i {
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        background: url("../img/sprite.png") no-repeat -251px -48px;
+        vertical-align: top;
+      }
+  .one-channel .closed-mark {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 6px;
+    right: 6px;
+    background: url("../img/sprite.png") no-repeat -180px -49px transparent;
+  }

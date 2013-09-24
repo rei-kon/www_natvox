@@ -19,7 +19,7 @@ $(document).ready( function(){
 
 
 	/* custom scrollbar init  */
-	$("#new-msgs-list, #events-list, #all-person-list").mCustomScrollbar({
+	$("#new-msgs-list, #events-list, #all-person-list, #popular-channels-list, #new-channels-list").mCustomScrollbar({
 		scrollInertia:300,
 		mouseWheel:true,
 		mouseWheelPixels:"auto"
@@ -56,6 +56,45 @@ $(document).ready( function(){
 	        tooltip.fadeOut('200');
 	    }
 	});
+
+	$('.channels.columns .channels-list .one-channel').hover(
+		function () {
+			var _this = $(this),
+				tooltip = $('.tooltp'),
+				ttTitle = tooltip.find('h3'),
+				ttAuthor = tooltip.find('p.author'),
+				ttText = tooltip.find('.txt'),
+				ttClosed = tooltip.find('p.closed'),
+				text = _this.find('.descr').html(),
+				name = _this.find('.name span').text(),
+				author = _this.find('.author').text(),
+				mark = _this.find('.closed-mark'),
+				w = _this.width(),
+				x = _this.offset().left,
+				y = _this.offset().top;
+
+			tooltip.css({ top: y-5, left: x+w-15 });
+			ttTitle.text(name);
+			ttAuthor.text(author);
+			ttText.html(text);			
+
+			if ( mark.length > 0 ) {
+				ttClosed.removeClass('hidden');
+			} else {
+				ttClosed.addClass('hidden');
+			}
+
+			// tooltip.stop().fadeIn('200');
+			tooltip.show();
+			
+		},
+		function () {
+			var tooltip = $('.tooltp');
+
+			// tooltip.stop().fadeOut('200');
+			tooltip.hide();
+		}
+	);
 	
 	if ( $('#simple-carousel').length > 0 ) {
 		$('#simple-carousel').jcarousel({
@@ -80,7 +119,8 @@ $(document).ready( function(){
 		arrows : false,
 		afterShow: function() {
 			$('select.styled').dropkick('refresh');
-			$('#all-person-list').mCustomScrollbar("update")
+			$('#all-person-list').mCustomScrollbar("update");
+			$('.fancybox-inner').css('overflow','visible');
 		}
 	});
 

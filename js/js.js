@@ -157,6 +157,7 @@ $(document).ready( function(){
 		$('.tabs-content .one-tab').hide();
 		$(tabID).show();
 		$('select.styled').dropkick('refresh');
+		$('#all-person-list').mCustomScrollbar("update");
 	});
 
 	$('.start-bc-form .add').on('click', function(e){

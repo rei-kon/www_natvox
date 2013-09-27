@@ -376,6 +376,41 @@
 						left: 9px;
 					}
 
+.feedback-form {
+	width: 602px;
+	padding: 17px;
+	background: #FFF;
+	font-size: 13px;
+	}
+	.feedback-form h3 {
+		color: #171717;
+		font-size: 24px;
+		line-height: 30px;
+		margin: 0;
+		padding: 10px 0 1px;
+	}
+	.feedback-form p {
+		margin: 14px 0 0 0 ;
+	}
+	.feedback-form label {
+		display: block;
+		color: #090909;
+		margin-bottom: 6px;
+	}
+	#sbj { width: 300px;}
+	#fdb-text {
+		width: 580px;
+		max-width: 580px;
+		height: 60px;
+	}
+	.feedback-form .submit {
+		padding-top: 3px;
+	}
+	.feedback-form .submit .btn {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
 /* // forms */
 
 .feedback {
@@ -763,6 +798,12 @@
 		.live-page .page-title h1 {
 			background: url("../img/title-bcst.png") no-repeat 0 0;
 		}
+		.search-page .page-title h1 {
+			background: url("../img/title-srch.png") no-repeat 0 0;
+		}
+		.profile-page .page-title h1 {
+			background: url("../img/title-profile.png") no-repeat 0 0;
+		}
 
 .home-top {
 	padding: 4px 0;
@@ -1105,8 +1146,11 @@
 
 
 #tab_members { display: none;}
+#tab_contacts { display: none;}
 #tab_broadcasts { display: none;}
 /*#tab_feed { display: none;}*/
+#tab_channels { display: none;}
+#tab_mailbox { display: none; }
 
 .bottom-content.b-cst {
 	margin-bottom: 0;
@@ -1119,14 +1163,14 @@
 	.ch-top {
 		display: table;
 		margin-top: 10px;
-		margin-bottom: 28px;
+		/*margin-bottom: 28px;*/
 		position: relative;
 		}
 		.ch-top .cover {
 			display: table-cell;
 			vertical-align: top;
 			width: 230px;
-			padding: 0 0 0 10px;
+			padding: 0 0 28px 10px;
 			position: relative;
 			}
 			.ch-top .cover .play {
@@ -1200,7 +1244,7 @@
 			display: table-cell;
 			vertical-align: top;
 			width: 710px;
-			padding: 0 10px 0 20px;
+			padding: 0 10px 13px 20px;
 			}
 			.ch-top .ch-titile {
 				position: relative;
@@ -1266,6 +1310,7 @@
 						margin: 0 5px;
 					}
 			.ch-top .text {
+				position: relative;
 				/*padding: 0 5px;*/
 				padding-top: 15px;
 				color: #171717;
@@ -1418,6 +1463,7 @@
 			font-size: 11px;
 			line-height: 11px;
 			color: #4e4e4e;
+			padding-bottom: 3px;
 			}
 			.feed .msg-box .date .y {
 				display: inline-block;
@@ -2119,3 +2165,328 @@
 				.bc-info .controls a.pref:hover i {
 					opacity: 1;
 				}
+
+.search-page {}				
+	.search-header {
+		border-bottom: 1px solid #efefef;
+		padding: 7px 28px 14px;
+	}
+	.search-header h3 {
+		color: #838383;
+		font-size: 16px;
+		line-height: 20px;
+		font-weight: bold;
+		padding: 0;
+		margin: 0;
+		}
+		.search-header h3 .black {
+			color: #484848;
+		}
+		.search-header  p {
+			margin: -1px 0 0 0;
+			color: #838383;
+			font-size: 12px;
+			line-height: 18px;
+		}
+
+	.content-box .search-box {
+		padding: 13px 26px 30px 28px;
+		position: relative;
+		border-bottom: 1px solid #eaeaea;
+		}
+		.content-box .search-box .block {
+			position: relative;
+			display: table-cell;
+			vertical-align: top;
+		}
+		.content-box .search-box:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		.content-box .search-box .block.b1 {
+			width: 568px;
+		}
+		.content-box .search-box .block.b1 input {
+			width: 546px;
+			margin-top: 2px;
+		}
+		.content-box .search-box label {
+			color: #090909;
+			line-height: 20px;
+		}
+		.content-box .search-box .block.b2 {
+			padding-top: 22px;
+			}
+			.content-box .search-box .dd-box {
+				position: relative;
+			}
+			.content-box .search-box .block.b2 label {
+				display: block;
+				width: 106px;
+				height: 31px;
+				line-height: 31px;
+				padding-right: 8px;
+				text-align: right;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			.content-box .search-box .wr {
+				position: relative;
+				padding-left: 114px;
+			}
+			#search-type { width: 90px;}
+			
+			.content-box .search-box .block.b3 {
+				padding-left: 18px;
+				padding-top: 22px;
+			}
+			.content-box .search-box .block.b3 .btn {
+				text-align: center;
+				width: 98px;
+			}
+		
+		.content-box .search-box ::-webkit-input-placeholder {
+		    color: #838383;
+		    font-style: italic;
+		    opacity: 1;
+		}
+		.content-box .search-box :-moz-placeholder {
+		    color: #838383;
+		    font-style: italic;
+		    opacity: 1;
+		}
+		.content-box .search-box ::-moz-placeholder {
+		    color: #838383;
+		    font-style: italic;
+		    opacity: 1;
+		}
+		.content-box .search-box :-ms-input-placeholder { 
+		    color: #838383;
+		    font-style: italic;
+		    opacity: 1;
+		}
+
+		.search-page .b-cst {
+			border-top: 1px solid #FFF;
+			border-bottom: 1px solid #eaeaea;
+			}
+			.search-page .b-cst .box-title {
+				padding: 17px 15px 18px 28px;
+			}
+			.search-page .b-cst .box-title a.all {
+				top: 17px;
+			}
+
+		.search-page .channels {
+			border-top: 1px solid #FFF;
+			border-bottom: 1px solid #eaeaea;
+			}
+			.search-page .channels .box-title {
+				padding: 17px 15px 18px 28px;
+			}
+			.search-page .channels .box-title a.all {
+				top: 17px;
+			}
+			.search-page .channels-list {
+				padding-bottom: 19px;
+			}
+
+		.search-page .people {
+			border-top: 1px solid #FFF;
+			border-bottom: 1px solid #eaeaea;
+			}
+		.search-page .people .box-title {
+				padding: 17px 15px 18px 28px;
+			}
+			.search-page .people .box-title a.all {
+				top: 17px;
+			}
+			.search-page .people .person-list {
+				padding-left: 84px;
+			}
+			.search-page .people .person {
+				margin-right: 49px;
+				margin-bottom: 19px;
+			}
+
+		.search-page .content-box .bottom-content.last {
+			padding-bottom: 19px;
+			border-bottom: 0;
+		}
+
+
+.profile-page {}	
+	.profile-page .ch-top .ch-titile {
+		padding-bottom: 0;
+	}
+	.profile-page .ch-top .ch-titile .stat .btn {
+		margin-left: 10px;
+	}	
+	.profile-page .followers { 
+		top:-6px;
+		left: -2px;
+	}
+	.profile-page .ch-top .text .more {
+		font-size: 11px;
+	}
+	.profile-page .bottom-content .box-title h2 span.links {
+		text-transform: none;
+		font-weight: normal;
+		margin-left: 20px;
+		font-size: 12px;
+		color: #8c8c8c;
+	}
+	.profile-page .bottom-content .box-title h2 span.br {
+		padding: 0 5px;
+	}
+	.profile-page .channels.all {
+		border-top:0;
+	}
+	.profile-page .channels.all .box-title {
+		padding: 20px 15px 20px 25px;
+	}
+	.profile-page .channels.all .sort {
+		right: 15px;
+	}
+	.profile-page .person-list {
+		padding: 0 0 0 83px;
+	}
+	.profile-page .person {
+		margin-right: 49px;
+	}
+	.profile-page .ch-top .controls {
+		position: absolute;
+		right: 15px;
+		top: 10px;
+	}
+	.profile-page .tabs .mb {
+		padding-right: 41px;
+	}
+	.profile-page .tabs span.new {
+		bottom: auto;
+		top: 7px;
+		left: auto;
+		right: 11px;
+		-webkit-box-shadow: none;
+      			box-shadow: none; 
+	}
+
+	.messages-box {}
+		.messages-box .box-title {}
+		.messages-box .box-title .info {
+			position: absolute;
+			right: 15px;
+			top: 16px;
+		}
+		.messages-box .box-title .info .nm {
+			font-size: 14px;
+			color: #656565;
+			margin-right: 15px;
+		}
+		.messages-box .msg-box .msg,
+		.messages-box .msg-box .date {
+			color: #848484;
+		}
+		.msg-box.new-msg {
+			border-color: #b50a0a;
+		}
+		.messages-box .msg-box.new-msg .msg,
+		.messages-box .msg-box.new-msg .date  {
+			color: #161616
+		}
+
+		.messages-box .msg-box {
+			background: #fcfcfc;
+		}
+		.messages-box .msg-box.new-msg {
+			background: #FFF;
+		}
+
+		.recipients {
+			padding-left: 17px;
+			float: left;
+			margin-bottom: 20px;
+			}
+			.recipients .people-list {
+				height: 730px;
+				width: 207px;
+				padding-left: 3px;
+				padding-top: 5px;
+			}
+			.recipients .person {
+				margin-right: 0;
+				display: block;
+				margin-bottom: 4px;
+				-webkit-box-shadow:  0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+						box-shadow:  0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+			}
+			.recipients .person.selected {
+				background: #292929;
+			}
+			.recipients .person.selected .txt {
+				color: #cecece;
+			}
+			.recipients .person .txt {
+				width: 100%;
+			    padding: 0 6px 0 6px;
+			}
+			.recipients .person .name {
+				font-size: 13px;
+				padding-top: 5px;
+			}
+			.recipients .person .date {
+				padding-top: 2px;
+				font-size: 9px;
+				}
+				.recipients .person .d {
+					display: inline-block;
+					vertical-align: top;
+					margin-right: 10px;
+				}
+				.recipients .person .time {
+					display: inline-block;
+					vertical-align: top;
+				}
+				.recipients .person .txt {
+					color: #4e4e4e;
+				}
+
+	.received-messages.feed {
+		float: left;
+		width: 591px;
+		padding-left: 16px;
+		padding-top: 5px;
+		}
+		.received-messages .msg-box {
+			background: #FFF;
+		}
+		.received-messages .msg-box.new-msg {}
+		.received-messages .msg-box .msg,
+		.received-messages .msg-box .date  {
+			color: #161616
+		}
+		.received-messages .msg-box.my-msg {
+			text-align: right;
+			background: #f7f7f7;
+			-webkit-box-shadow:  0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+          			box-shadow:  0px 1px 2px 0px rgba(0, 0, 0, 0.1);  
+		}
+		.received-messages .msg-box.my-msg .img {
+			padding-left: 9px;
+			padding-right: 0;
+		}
+		.received-messages .msg-box.my-msg .msg {
+			padding-left: 20px;
+			/*text-align: left;*/
+		}
+		.received-messages .msg-box .txt {
+			width: 526px;
+		}
+		.received-messages .post .submit {
+			padding-right: 11px;
+		}
+		.received-messages .more {
+			padding-top: 18px;
+		}

@@ -1,0 +1,1926 @@
+<!DOCTYPE html>
+<html>
+<head>		
+	<meta charset="utf-8"/>
+
+	<title>NatVox</title>
+
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> 
+
+	<link href="css/normalize.css" rel="stylesheet" type="text/css">
+	<link href="css/common.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+
+	<!-- custom scrollbar plugin -->
+	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+	<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">	
+
+	<!-- fancybox plugin for dialog windows -->
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css">	
+
+	<!-- dropkick plugin for styling drop-down lists -->
+	<script type="text/javascript" src="js/jquery.dropkick-min.js	"></script>
+	<link href="css/jquery.dropkick.css" rel="stylesheet" type="text/css">
+
+	<script type="text/javascript" src="js/js.js"></script>
+
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div class="header">
+	<div class="feedback eng">
+		<a href="#"><i></i></a>
+	</div>
+	<div class="winWidth clearChlds">
+		<div class="box-l clearChlds">
+			<div class="logo">
+				<a href="#"></a>
+			</div>
+			<div class="btn-set">
+				<a href="#" class="btn btn-tp1 green">Start Broadcast</a>
+				<a href="#" class="btn btn-tp1 gray">Live &amp; Upcoming</a>
+				<a href="#" class="btn btn-tp1 gray">Popular &amp; Trending</a>
+			</div>
+		</div>
+
+		<!-- logged in state -->		
+		<div class="box-r clearChlds lk">
+			<div class="info">
+				<div class="photo">
+					<img src="img/content/userpic.jpg">
+				</div>
+				<div class="name-box">
+					<p>Logged in:</p>
+					<span>Quentin Tarantino</span>
+				</div>
+			</div>
+			<div class="btn-set">
+				<div class="btn btn-tp3 icon mail tt"><i></i><span class="new">54</span>
+					<div class="tltip arr-top">
+						<div class="in">
+							<div id="new-msgs-list" class="new-msgs">
+								<div class="item news-item">
+									<div class="img">
+										<img src="img/content/news-1.jpg" alt="">
+									</div>
+									<div class="txt">
+										<div class="name">Jessica Parkerson</div>
+										<div class="date">
+											<span class="month">January</span>
+											<span class="day">6</span>
+											<span class="br">|</span>
+											<span class="year">2013</span>
+											<span class="time">22:30</span>
+										</div>
+									</div>
+								</div> 
+								<div class="item news-item">
+									<div class="img">
+										<img src="img/content/news-2.jpg" alt="">
+									</div>
+									<div class="txt">
+										<div class="name">Peter Jackson</div>
+										<div class="date">
+											<span class="month">January</span>
+											<span class="day">6</span>
+											<span class="br">|</span>
+											<span class="year">2013</span>
+											<span class="time">22:30</span>
+										</div>
+									</div>
+								</div> 
+								<div class="item news-item">
+									<div class="img">
+										<img src="img/content/news-1.jpg" alt="">
+									</div>
+									<div class="txt">
+										<div class="name">Jessica Parkerson</div>
+										<div class="date">
+											<span class="month">January</span>
+											<span class="day">6</span>
+											<span class="br">|</span>
+											<span class="year">2013</span>
+											<span class="time">22:30</span>
+										</div>
+									</div>
+								</div> 
+								<div class="item news-item">
+									<div class="img">
+										<img src="img/content/news-2.jpg" alt="">
+									</div>
+									<div class="txt">
+										<div class="name">Peter Jackson</div>
+										<div class="date">
+											<span class="month">January</span>
+											<span class="day">6</span>
+											<span class="br">|</span>
+											<span class="year">2013</span>
+											<span class="time">22:30</span>
+										</div>
+									</div>
+								</div> 
+								<div class="item news-item">
+									<div class="img">
+										<img src="img/content/news-2.jpg" alt="">
+									</div>
+									<div class="txt">
+										<div class="name">Peter Jackson</div>
+										<div class="date">
+											<span class="month">January</span>
+											<span class="day">6</span>
+											<span class="br">|</span>
+											<span class="year">2013</span>
+											<span class="time">22:30</span>
+										</div>
+									</div>
+								</div> 
+								<div class="item news-item">
+									<div class="img">
+										<img src="img/content/news-2.jpg" alt="">
+									</div>
+									<div class="txt">
+										<div class="name">Peter Jackson</div>
+										<div class="date">
+											<span class="month">January</span>
+											<span class="day">6</span>
+											<span class="br">|</span>
+											<span class="year">2013</span>
+											<span class="time">22:30</span>
+										</div>
+									</div>
+								</div> 
+								<div class="item news-item">
+									<div class="img">
+										<img src="img/content/news-2.jpg" alt="">
+									</div>
+									<div class="txt">
+										<div class="name">Peter Jackson</div>
+										<div class="date">
+											<span class="month">January</span>
+											<span class="day">6</span>
+											<span class="br">|</span>
+											<span class="year">2013</span>
+											<span class="time">22:30</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+						</div>						
+					</div>
+				</div>
+				<div class="btn btn-tp3 icon pref tt"><i></i>
+					<div class="tltip arr-top">
+						<div class="in">
+							<ul class="tt-menu">
+								<li><a href="#">Edit Profile</a></li>
+								<li><a href="#">Contacts</a></li>
+								<li><a href="#">Broadcasts</a></li>
+								<li><a href="#">Channels</a></li>
+								<li><a href="#">Mailbox</a></li>
+								<li><a href="#">Invite to NatVox</a></li>
+								<li><a href="#">Log out</a></li>
+							</ul>	
+						</div>						
+					</div> 
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div> <!-- .header -->
+
+<div class="page-content profile-page">
+	<div class="bg"></div>
+
+	<div class="nav winWidth clearChlds">
+		<div class="search-box">
+			<form action="#">
+				<input type="text" placeholder="Search" class="search-field">
+				<input type="submit" class="search-btn" value="">
+			</form>
+		</div>
+		<div class="btn-set">
+			<select class="styled tp4" id="opt2">
+				<option selected="selected">Catalogue</option>
+				<option>Lorem ipsum</option>
+				<option>Dolor sit amet</option>
+				<option>Lorem ipsum</option>
+				<option>Dolor sit amet</option>				
+			</select>
+			<!-- <a href="#" class="btn btn-tp4 dd">Catalogue</a> -->
+			<a href="#" class="btn btn-tp4">Channels</a>			
+		</div>
+	</div> <!-- .nav -->
+
+	<div class="content-box winWidth">
+		<div class="inner">
+			<div class="page-title">
+				<h1>Members</h1>
+			</div>
+
+			<div class="ch-top">
+				<div class="cover pic">
+					<img src="img/content/profile-02.jpg" alt="">
+				</div>
+				<div class="description">					
+					<div class="ch-titile">
+						<h2>Quentin Tarantino</h2>
+						<span class="followers">
+							<i></i>
+							1275 Followers
+						</span>
+						<!-- <div class="stat">
+							<a class="btn btn-tp1 white icon msg" href="#"><i></i>Write a message</a>							
+							<a class="btn btn-tp1 green icon follow" href="#"><i></i>Follow</a>
+						</div> -->
+					</div>
+					<div class="text">
+						<div class="controls">
+							<a href="#" class="edit"><i></i>Edit</a>
+						</div>
+						<p><b>Occupation:</b> Scientist<br>
+						<b>Interests:</b> Science, Basketball, Fishing, Astronomy, Hip Hop</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec libero ac nulla dapibus laoreet in ut quam. Pellentesque ac eleifend velit, id fermentum metus. Aenean aliquet convallis libero placerat venenatis. Phasellus in porttitor diam, at pretium sapien. Nullam placerat massa quis venenatis sagittis. 
+						</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec libero ac nulla dapibus laoreet in ut quam. Pellentesque ac eleifend velit, id fermentum metus. Aenean aliquet convallis libero placerat venenatis. Phasellus in porttitor diam, at pretium sapien... <a href="#" class="more">See more</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="tabs">
+				<ul>
+					<li rel="tab_contacts">Contacts</li><li rel="tab_broadcasts">Broadcasts</li><li rel="tab_channels">Channels</li><li  class="active" rel="tab_feed">Activity feed</li><li rel="tab_mailbox" class="mb">Mailbox <span class="new">54</span></li>
+				</ul>
+				<a class="btn btn-tp1 white" href="#">Invite to Natvox</a>
+			</div>
+
+			<div class="tabs-content">
+				<div class="one-tab bottom-content" id="tab_contacts">
+					<div class="box-title">
+						<h2>Contacts <span class="links"><a href="#">Following</a><span class="br">|</span>Followers</span></h2>
+					</div>
+
+					<div class="person-list">
+									
+						<div class="person">
+							<div class="img">
+								<img src="img/content/user-1.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">John Johnson</div>
+							</div>									
+							<a class="close" href="#"><i></i></a>
+						</div>	
+
+						<div class="person">
+							<div class="img">
+								<img src="img/content/user-2.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">Jennie Johnson</div>
+							</div>									
+							<a class="close" href="#"><i></i></a>
+						</div>	
+
+						<div class="person">
+							<div class="img">
+								<img src="img/content/user-3.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">Jennie Johnson</div>
+							</div>									
+							<a class="close" href="#"><i></i></a>
+						</div>	
+
+						<div class="person">
+							<div class="img">
+								<img src="img/content/user-4.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">Jennie Johnson</div>
+							</div>									
+							<a class="close" href="#"><i></i></a>
+						</div>	
+
+						<div class="person">
+							<div class="img">
+								<img src="img/content/user-5.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">Jessica Parkerson</div>
+							</div>									
+							<a class="close" href="#"><i></i></a>
+						</div>	
+
+						<div class="person">
+							<div class="img">
+								<img src="img/content/user-2.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">Jennie Johnson</div>
+							</div>									
+							<a class="close" href="#"><i></i></a>
+						</div>	
+
+						<div class="person">
+							<div class="img">
+								<img src="img/content/user-3.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">Jennie Johnson</div>
+							</div>									
+							<a class="close" href="#"><i></i></a>
+						</div>	
+
+						<div class="person">
+							<div class="img">
+								<img src="img/content/user-4.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">Jennie Johnson</div>
+							</div>									
+							<a class="close" href="#"><i></i></a>
+						</div>	
+
+						<div class="person">
+							<div class="img">
+								<img src="img/content/user-5.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">Jessica Parkerson</div>
+							</div>									
+							<a class="close" href="#"><i></i></a>
+						</div>	
+
+						<div class="person">
+							<div class="img">
+								<img src="img/content/user-1.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">John Johnson</div>
+							</div>									
+							<a class="close" href="#"><i></i></a>
+						</div>	
+
+						<div class="person">
+							<div class="img">
+								<img src="img/content/user-2.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">Jennie Johnson</div>
+							</div>									
+							<a class="close" href="#"><i></i></a>
+						</div>	
+
+						<div class="person">
+							<div class="img">
+								<img src="img/content/user-3.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">Jennie Johnson</div>
+							</div>									
+							<a class="close" href="#"><i></i></a>
+						</div>	
+
+						<div class="person">
+							<div class="img">
+								<img src="img/content/user-4.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">Jennie Johnson</div>
+							</div>									
+							<a class="close" href="#"><i></i></a>
+						</div>	
+
+						<div class="person">
+							<div class="img">
+								<img src="img/content/user-5.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">Jessica Parkerson</div>
+							</div>									
+							<a class="close" href="#"><i></i></a>
+						</div>	
+
+						<div class="person">
+							<div class="img">
+								<img src="img/content/user-2.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">Jennie Johnson</div>
+							</div>									
+							<a class="close" href="#"><i></i></a>
+						</div>	
+
+					</div>
+
+					<div class="pages">
+						<a href="#" class="prev"><i></i></a>
+						<a href="#">1</a>
+						<a href="#" class="active">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">...</a>
+						<a href="#">26</a>
+						<a href="#" class="next"><i></i></a>
+					</div>
+									
+				</div>
+
+				<div class="one-tab bottom-content b-cst" id="tab_broadcasts">
+					
+					<div class="box-title">
+						<h2>broadcasts <span class="links"><a href="#">Created</a><span class="br">|</span>Followed</span></h2>
+						<div class="sort">
+							<div class="label">Sort by: </div>
+							<div class="dd-box">
+								<!-- <a href="#" class="btn btn-tp4 dd">Date</a> -->
+								<select class="styled tp4-1" id="opt3">
+									<option>Date</option>
+									<option>Time</option>
+									<option>Name</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="list">
+
+						<div class="item b-cst-item live">
+							<div class="img">
+								<img src="img/content/cover-02.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">
+									<a href="#">Social Media and Digital Branding</a>
+									<p class="author">By Jack Johnson</p>
+								</div>
+								<div class="date">
+									<div class="y">
+										<i></i>
+										<span class="month">January</span>
+										<span class="day">6</span>
+										<span class="br">|</span>
+										<span class="year">2013</span>
+									</div>
+									<div class="t">
+										<i></i>
+										<span class="time">22:30</span>	
+									</div>
+								</div>
+							</div>
+						</div> <!-- .item -->
+
+						<div class="item b-cst-item live">
+							<div class="img">
+								<img src="img/content/cover-01.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">
+									<a href="#">Social Media and Digital Branding</a>
+									<p class="author">By Jack Johnson</p>
+								</div>
+								<div class="date">
+									<div class="y">
+										<i></i>
+										<span class="month">January</span>
+										<span class="day">6</span>
+										<span class="br">|</span>
+										<span class="year">2013</span>
+									</div>
+									<div class="t">
+										<i></i>
+										<span class="time">22:30</span>	
+									</div>
+								</div>
+							</div>
+						</div> <!-- .item -->
+
+						<div class="item b-cst-item">
+							<div class="img">
+								<img src="img/content/cover-03.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">
+									<a href="#">Social Media and Digital Branding</a>
+									<p class="author">By Jack Johnson</p>
+								</div>
+								<div class="date">
+									<div class="y">
+										<i></i>
+										<span class="month">January</span>
+										<span class="day">6</span>
+										<span class="br">|</span>
+										<span class="year">2013</span>
+									</div>
+									<div class="t">
+										<i></i>
+										<span class="time">22:30</span>	
+									</div>
+								</div>
+							</div>
+						</div> <!-- .item -->
+
+						<div class="item b-cst-item">
+							<div class="img">
+								<img src="img/content/cover-04.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">
+									<a href="#">Social Media</a>
+									<p class="author">By Jack Johnson</p>
+								</div>
+								<div class="date arch">
+									<span class="ar">ARCHIVE</span>
+									<span>Was shown on:</span><br>
+									January 4, 2013 | 22:35
+								</div>
+							</div>
+						</div> <!-- .item -->
+
+						<div class="item b-cst-item">
+							<div class="img">
+								<img src="img/content/cover-05.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">
+									<a href="#">Social Media and Digital Branding</a>
+									<p class="author">By Jack Johnson</p>
+								</div>
+								<div class="date">
+									<div class="y">
+										<i></i>
+										<span class="month">January</span>
+										<span class="day">6</span>
+										<span class="br">|</span>
+										<span class="year">2013</span>
+									</div>
+									<div class="t">
+										<i></i>
+										<span class="time">22:30</span>	
+									</div>
+								</div>
+							</div>
+						</div> <!-- .item -->
+
+						<div class="item b-cst-item">
+							<div class="img">
+								<img src="img/content/cover-02.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">
+									<a href="#">Social Media and Digital Branding</a>
+									<p class="author">By Jack Johnson</p>
+								</div>
+								<div class="date">
+									<div class="y">
+										<i></i>
+										<span class="month">January</span>
+										<span class="day">6</span>
+										<span class="br">|</span>
+										<span class="year">2013</span>
+									</div>
+									<div class="t">
+										<i></i>
+										<span class="time">22:30</span>	
+									</div>
+								</div>
+							</div>
+						</div> <!-- .item -->
+
+						<div class="item b-cst-item">
+							<div class="img">
+								<img src="img/content/cover-01.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">
+									<a href="#">Social Media and Digital Branding</a>
+									<p class="author">By Jack Johnson</p>
+								</div>
+								<div class="date">
+									<div class="y">
+										<i></i>
+										<span class="month">January</span>
+										<span class="day">6</span>
+										<span class="br">|</span>
+										<span class="year">2013</span>
+									</div>
+									<div class="t">
+										<i></i>
+										<span class="time">22:30</span>	
+									</div>
+								</div>
+							</div>
+						</div> <!-- .item -->
+
+						<div class="item b-cst-item">
+							<div class="img">
+								<img src="img/content/cover-03.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">
+									<a href="#">Social Media and Digital Branding</a>
+									<p class="author">By Jack Johnson</p>
+								</div>
+								<div class="date">
+									<div class="y">
+										<i></i>
+										<span class="month">January</span>
+										<span class="day">6</span>
+										<span class="br">|</span>
+										<span class="year">2013</span>
+									</div>
+									<div class="t">
+										<i></i>
+										<span class="time">22:30</span>	
+									</div>
+								</div>
+							</div>
+						</div> <!-- .item -->
+
+						<div class="item b-cst-item">
+							<div class="img">
+								<img src="img/content/cover-04.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">
+									<a href="#">Social Media</a>
+									<p class="author">By Jack Johnson</p>
+								</div>
+								<div class="date">
+									<div class="y">
+										<i></i>
+										<span class="month">January</span>
+										<span class="day">6</span>
+										<span class="br">|</span>
+										<span class="year">2013</span>
+									</div>
+									<div class="t">
+										<i></i>
+										<span class="time">22:30</span>	
+									</div>
+								</div>
+							</div>
+						</div> <!-- .item -->
+
+						<div class="item b-cst-item">
+							<div class="img">
+								<img src="img/content/cover-05.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">
+									<a href="#">Social Media and Digital Branding</a>
+									<p class="author">By Jack Johnson</p>
+								</div>
+								<div class="date">
+									<div class="y">
+										<i></i>
+										<span class="month">January</span>
+										<span class="day">6</span>
+										<span class="br">|</span>
+										<span class="year">2013</span>
+									</div>
+									<div class="t">
+										<i></i>
+										<span class="time">22:30</span>	
+									</div>
+								</div>
+							</div>
+						</div> <!-- .item -->
+
+					</div>
+
+					<div class="pages">
+						<a href="#" class="prev"><i></i></a>
+						<a href="#">1</a>
+						<a href="#" class="active">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">...</a>
+						<a href="#">26</a>
+						<a href="#" class="next"><i></i></a>
+					</div>					
+				</div>
+
+				<div class="one-tab bottom-content channels all" id="tab_channels">
+					
+					<div class="box-title">
+						<h2>Channels<span class="links"><a href="#">Created</a><span class="br">|</span>Followed</span></h2>
+						<div class="sort">
+							<div class="label">Sort by: </div>
+							<div class="dd-box">
+								<!-- <a href="#" class="btn btn-tp4 dd">Date</a> -->
+								<select class="styled tp4-1" id="opt4">
+									<option>Date</option>
+									<option>Time</option>
+									<option>Name</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="channels-list">
+
+						<div class="one-channel">
+							<div class="img">
+								<img src="img/content/channel-01.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">
+									<span>Mens fashion Channel</span>
+									<p class="author">By Jack Johnson</p>
+								</div>
+								<div class="info">
+									<div class="followers">
+										<i></i> 1275 Followers
+									</div>
+									<div class="bscts">
+										<i></i> 18275 Broadcasts
+									</div>
+								</div>
+							</div>									
+							<!-- <div class="closed-mark"></div> -->
+						</div>	
+
+						<div class="one-channel">
+							<div class="img">
+								<img src="img/content/channel-02.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">
+									<span>Alexandra Goveres Channel</span>
+									<p class="author">By Alexandra Goveres</p>
+								</div>
+								<div class="info">
+									<div class="followers">
+										<i></i> 1275 Followers
+									</div>
+									<div class="bscts">
+										<i></i> 18275 Broadcasts
+									</div>
+								</div>
+							</div>									
+							<div class="closed-mark"></div>
+						</div>	
+
+						<div class="one-channel">
+							<div class="img">
+								<img src="img/content/channel-03.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">
+									<span>Science &amp; Technology Channel</span>
+									<p class="author">By Jack Johnson</p>
+								</div>
+								<div class="info">
+									<div class="followers">
+										<i></i> 1275 Followers
+									</div>
+									<div class="bscts">
+										<i></i> 18275 Broadcasts
+									</div>
+								</div>
+							</div>									
+							<!-- <div class="closed-mark"></div> -->
+						</div>	
+
+						<div class="one-channel">
+							<div class="img">
+								<img src="img/content/channel-04.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">
+									<span>The Maines Channel</span>
+									<p class="author">By Jack Johnson</p>
+								</div>
+								<div class="info">
+									<div class="followers">
+										<i></i> 1275 Followers
+									</div>
+									<div class="bscts">
+										<i></i> 18275 Broadcasts
+									</div>
+								</div>
+							</div>									
+							<div class="closed-mark"></div>
+						</div>
+
+						<div class="one-channel">
+							<div class="img">
+								<img src="img/content/channel-01.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">
+									<span>Mens fashion Channel</span>
+									<p class="author">By Jack Johnson</p>
+								</div>
+								<div class="info">
+									<div class="followers">
+										<i></i> 1275 Followers
+									</div>
+									<div class="bscts">
+										<i></i> 18275 Broadcasts
+									</div>
+								</div>
+							</div>									
+							<!-- <div class="closed-mark"></div> -->
+						</div>	
+
+						<div class="one-channel">
+							<div class="img">
+								<img src="img/content/channel-02.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">
+									<span>Alexandra Goveres Channel</span>
+									<p class="author">By Alexandra Goveres</p>
+								</div>
+								<div class="info">
+									<div class="followers">
+										<i></i> 1275 Followers
+									</div>
+									<div class="bscts">
+										<i></i> 18275 Broadcasts
+									</div>
+								</div>
+							</div>									
+							<div class="closed-mark"></div>
+						</div>	
+
+						<div class="one-channel">
+							<div class="img">
+								<img src="img/content/channel-03.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">
+									<span>Science &amp; Technology Channel</span>
+									<p class="author">By Jack Johnson</p>
+								</div>
+								<div class="info">
+									<div class="followers">
+										<i></i> 1275 Followers
+									</div>
+									<div class="bscts">
+										<i></i> 18275 Broadcasts
+									</div>
+								</div>
+							</div>									
+							<!-- <div class="closed-mark"></div> -->
+						</div>	
+
+						<div class="one-channel">
+							<div class="img">
+								<img src="img/content/channel-04.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">
+									<span>The Maines Channel</span>
+									<p class="author">By Jack Johnson</p>
+								</div>
+								<div class="info">
+									<div class="followers">
+										<i></i> 1275 Followers
+									</div>
+									<div class="bscts">
+										<i></i> 18275 Broadcasts
+									</div>
+								</div>
+							</div>									
+							<div class="closed-mark"></div>
+						</div>
+
+						<div class="one-channel">
+							<div class="img">
+								<img src="img/content/channel-01.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">
+									<span>Mens fashion Channel</span>
+									<p class="author">By Jack Johnson</p>
+								</div>
+								<div class="info">
+									<div class="followers">
+										<i></i> 1275 Followers
+									</div>
+									<div class="bscts">
+										<i></i> 18275 Broadcasts
+									</div>
+								</div>
+							</div>									
+							<!-- <div class="closed-mark"></div> -->
+						</div>	
+
+						<div class="one-channel">
+							<div class="img">
+								<img src="img/content/channel-02.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">
+									<span>Alexandra Goveres Channel</span>
+									<p class="author">By Alexandra Goveres</p>
+								</div>
+								<div class="info">
+									<div class="followers">
+										<i></i> 1275 Followers
+									</div>
+									<div class="bscts">
+										<i></i> 18275 Broadcasts
+									</div>
+								</div>
+							</div>									
+							<div class="closed-mark"></div>
+						</div>	
+
+						<div class="one-channel">
+							<div class="img">
+								<img src="img/content/channel-03.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">
+									<span>Science &amp; Technology Channel</span>
+									<p class="author">By Jack Johnson</p>
+								</div>
+								<div class="info">
+									<div class="followers">
+										<i></i> 1275 Followers
+									</div>
+									<div class="bscts">
+										<i></i> 18275 Broadcasts
+									</div>
+								</div>
+							</div>									
+							<!-- <div class="closed-mark"></div> -->
+						</div>	
+
+						<div class="one-channel">
+							<div class="img">
+								<img src="img/content/channel-04.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">
+									<span>The Maines Channel</span>
+									<p class="author">By Jack Johnson</p>
+								</div>
+								<div class="info">
+									<div class="followers">
+										<i></i> 1275 Followers
+									</div>
+									<div class="bscts">
+										<i></i> 18275 Broadcasts
+									</div>
+								</div>
+							</div>									
+							<div class="closed-mark"></div>
+						</div>
+
+						<div class="one-channel">
+							<div class="img">
+								<img src="img/content/channel-01.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">
+									<span>Mens fashion Channel</span>
+									<p class="author">By Jack Johnson</p>
+								</div>
+								<div class="info">
+									<div class="followers">
+										<i></i> 1275 Followers
+									</div>
+									<div class="bscts">
+										<i></i> 18275 Broadcasts
+									</div>
+								</div>
+							</div>									
+							<!-- <div class="closed-mark"></div> -->
+						</div>	
+
+						<div class="one-channel">
+							<div class="img">
+								<img src="img/content/channel-02.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">
+									<span>Alexandra Goveres Channel</span>
+									<p class="author">By Alexandra Goveres</p>
+								</div>
+								<div class="info">
+									<div class="followers">
+										<i></i> 1275 Followers
+									</div>
+									<div class="bscts">
+										<i></i> 18275 Broadcasts
+									</div>
+								</div>
+							</div>									
+							<div class="closed-mark"></div>
+						</div>	
+
+						<div class="one-channel">
+							<div class="img">
+								<img src="img/content/channel-03.jpg" alt="">
+							</div>
+							<div class="txt">
+								<div class="name">
+									<span>Science &amp; Technology Channel</span>
+									<p class="author">By Jack Johnson</p>
+								</div>
+								<div class="info">
+									<div class="followers">
+										<i></i> 1275 Followers
+									</div>
+									<div class="bscts">
+										<i></i> 18275 Broadcasts
+									</div>
+								</div>
+							</div>									
+							<!-- <div class="closed-mark"></div> -->
+						</div>	
+
+					</div> <!-- .channels-list -->
+
+					<div class="pages">
+						<a class="prev" href="#"><i></i></a>
+						<a href="#">1</a>
+						<a class="active" href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">...</a>
+						<a href="#">26</a>
+						<a class="next" href="#"><i></i></a>
+					</div>				
+				</div>
+
+				<div class="one-tab bottom-content feed-box" id="tab_feed">
+					<div class="box-title">
+						<h2>Activity feed</h2>
+					</div>
+					<div class="feed">
+						
+						<div class="post msg-box">
+							<div class="img"><img src="img/content/userpic.jpg"></div>
+							<div class="txt">
+								<div class="name"><a href="#">Quentin Tarantino</a></div>
+								<form action="#">
+									<textarea name="txtMsg" id="msg" placeholder="Type here to update your profile"></textarea>
+									<div class="submit">
+										<a href="#" class="btn btn-tp1 green">Post</a>
+									</div>
+								</form>
+							</div>							
+						</div>
+						
+						<div class="hr"></div>
+
+						<div class="msg-list">
+
+							<div class="msg-box">
+								<div class="img"><img src="img/content/feed-1.jpg"></div>
+								<div class="txt">
+									<div class="name"><a href="#">Peter Jackson</a> has joined <a href="#">Science &amp; Technology Channel</a></div>
+									<div class="date">
+										<div class="y">
+											<i></i>
+											<span class="month">January</span>
+											<span class="day">6</span>
+											<span class="br">|</span>
+											<span class="year">2013</span>											
+										</div>
+										<div class="t">
+											<i></i>
+											<span class="time">22:30</span>	
+										</div>
+									</div>
+								</div>							
+							</div>	
+
+							<div class="msg-box">
+								<div class="img"><img src="img/content/feed-2.jpg"></div>
+								<div class="txt">
+									<div class="name"><a href="#">Jessica Parkerson</a></div>
+									<!-- не выводить блок, если сообщения нет -->
+									<div class="msg">
+										Since classical antiquity, science as a type of knowledge has been closely linked to philosophy. In the early modern period the words "science" and "philosophy" .
+									</div>
+									<div class="date">
+										<div class="y">
+											<i></i>
+											<span class="month">January</span>
+											<span class="day">6</span>
+											<span class="br">|</span>
+											<span class="year">2013</span>											
+										</div>
+										<div class="t">
+											<i></i>
+											<span class="time">22:30</span>	
+										</div>
+									</div>
+								</div>							
+							</div>
+
+							<div class="msg-box">
+								<div class="img"><img src="img/content/feed-1.jpg"></div>
+								<div class="txt">
+									<div class="name"><a href="#">Peter Jackson</a> has joined <a href="#">Science &amp; Technology Channel</a></div>
+									<div class="date">
+										<div class="y">
+											<i></i>
+											<span class="month">January</span>
+											<span class="day">6</span>
+											<span class="br">|</span>
+											<span class="year">2013</span>											
+										</div>
+										<div class="t">
+											<i></i>
+											<span class="time">22:30</span>	
+										</div>
+									</div>
+								</div>							
+							</div>	
+
+							<div class="msg-box">
+								<div class="img"><img src="img/content/feed-2.jpg"></div>
+								<div class="txt">
+									<div class="name"><a href="#">Jessica Parkerson</a></div>
+									<!-- не выводить блок, если сообщения нет -->
+									<div class="msg">
+										Since classical antiquity, science as a type of knowledge has been closely linked to philosophy. In the early modern period the words "science" and "philosophy" .
+									</div>
+									<div class="date">
+										<div class="y">
+											<i></i>
+											<span class="month">January</span>
+											<span class="day">6</span>
+											<span class="br">|</span>
+											<span class="year">2013</span>											
+										</div>
+										<div class="t">
+											<i></i>
+											<span class="time">22:30</span>	
+										</div>
+									</div>
+								</div>							
+							</div>	
+
+							<div class="msg-box">
+								<div class="img"><img src="img/content/feed-3.jpg"></div>
+								<div class="txt">
+									<div class="name"><a href="#">John Jackson</a> has joined <a href="#">Watch it now.</a></div>
+									<div class="date">
+										<div class="y">
+											<i></i>
+											<span class="month">January</span>
+											<span class="day">6</span>
+											<span class="br">|</span>
+											<span class="year">2013</span>											
+										</div>
+										<div class="t">
+											<i></i>
+											<span class="time">22:30</span>	
+										</div>
+									</div>
+								</div>							
+							</div>
+
+							<div class="msg-box">
+								<div class="img"><img src="img/content/feed-1.jpg"></div>
+								<div class="txt">
+									<div class="name"><a href="#">Peter Jackson</a> has joined <a href="#">Science &amp; Technology Channel</a></div>
+									<div class="date">
+										<div class="y">
+											<i></i>
+											<span class="month">January</span>
+											<span class="day">6</span>
+											<span class="br">|</span>
+											<span class="year">2013</span>											
+										</div>
+										<div class="t">
+											<i></i>
+											<span class="time">22:30</span>	
+										</div>
+									</div>
+								</div>							
+							</div>	
+
+							<div class="msg-box">
+								<div class="img"><img src="img/content/feed-2.jpg"></div>
+								<div class="txt">
+									<div class="name"><a href="#">Jessica Parkerson</a></div>
+									<!-- не выводить блок, если сообщения нет -->
+									<div class="msg">
+										Since classical antiquity, science as a type of knowledge has been closely linked to philosophy. In the early modern period the words "science" and "philosophy" .
+									</div>
+									<div class="date">
+										<div class="y">
+											<i></i>
+											<span class="month">January</span>
+											<span class="day">6</span>
+											<span class="br">|</span>
+											<span class="year">2013</span>											
+										</div>
+										<div class="t">
+											<i></i>
+											<span class="time">22:30</span>	
+										</div>
+									</div>
+								</div>							
+							</div>	
+
+							<div class="msg-box">
+								<div class="img"><img src="img/content/feed-3.jpg"></div>
+								<div class="txt">
+									<div class="name"><a href="#">John Jackson</a> has joined <a href="#">Watch it now.</a></div>
+									<div class="date">
+										<div class="y">
+											<i></i>
+											<span class="month">January</span>
+											<span class="day">6</span>
+											<span class="br">|</span>
+											<span class="year">2013</span>											
+										</div>
+										<div class="t">
+											<i></i>
+											<span class="time">22:30</span>	
+										</div>
+									</div>
+								</div>							
+							</div>
+
+							<div class="msg-box">
+								<div class="img"><img src="img/content/feed-1.jpg"></div>
+								<div class="txt">
+									<div class="name"><a href="#">Peter Jackson</a> has joined <a href="#">Science &amp; Technology Channel</a></div>
+									<div class="date">
+										<div class="y">
+											<i></i>
+											<span class="month">January</span>
+											<span class="day">6</span>
+											<span class="br">|</span>
+											<span class="year">2013</span>											
+										</div>
+										<div class="t">
+											<i></i>
+											<span class="time">22:30</span>	
+										</div>
+									</div>
+								</div>							
+							</div>	
+
+							<div class="msg-box">
+								<div class="img"><img src="img/content/feed-2.jpg"></div>
+								<div class="txt">
+									<div class="name"><a href="#">Jessica Parkerson</a></div>
+									<!-- не выводить блок, если сообщения нет -->
+									<div class="msg">
+										Since classical antiquity, science as a type of knowledge has been closely linked to philosophy. In the early modern period the words "science" and "philosophy" .
+									</div>
+									<div class="date">
+										<div class="y">
+											<i></i>
+											<span class="month">January</span>
+											<span class="day">6</span>
+											<span class="br">|</span>
+											<span class="year">2013</span>											
+										</div>
+										<div class="t">
+											<i></i>
+											<span class="time">22:30</span>	
+										</div>
+									</div>
+								</div>							
+							</div>	
+
+							<div class="msg-box">
+								<div class="img"><img src="img/content/feed-3.jpg"></div>
+								<div class="txt">
+									<div class="name"><a href="#">John Jackson</a> has joined <a href="#">Watch it now.</a></div>
+									<div class="date">
+										<div class="y">
+											<i></i>
+											<span class="month">January</span>
+											<span class="day">6</span>
+											<span class="br">|</span>
+											<span class="year">2013</span>											
+										</div>
+										<div class="t">
+											<i></i>
+											<span class="time">22:30</span>	
+										</div>
+									</div>
+								</div>							
+							</div>
+
+						</div>						
+
+						<div class="more">
+							<a href="#"><i></i>Load older</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="one-tab bottom-content messages-box" id="tab_mailbox">
+					<div class="box-title">
+						<h2>Mailbox</h2>
+						<div class="info">
+							<span class="nm">Conversation with <a href="#">Thomas Thompson</a></span>
+							<a class="btn btn-tp1 white" href="#">Back to Messages</a>
+						</div>						
+					</div>
+
+					<div class="recipients">
+						<div class="people-list" id="all-person-list">
+
+							<div class="person">
+								<div class="img">
+									<img alt="" src="img/content/private-01.jpg">
+								</div>
+								<div class="txt">
+									<div class="name">John Johnson</div>
+									<div class="date">
+										<div class="d">January 6  <span class="br">|</span>  2013 </div>										
+										<div class="time">22:30</div>										
+									</div>
+								</div>									
+							</div>
+
+							<div class="person">
+								<div class="img">
+									<img alt="" src="img/content/private-02.jpg">
+								</div>
+								<div class="txt">
+									<div class="name">Jennie Johnson</div>
+									<div class="date">
+										<div class="d">January 6  <span class="br">|</span>  2013 </div>										
+										<div class="time">22:30</div>										
+									</div>
+								</div>									
+							</div>
+
+							<div class="person selected">
+								<div class="img">
+									<img alt="" src="img/content/private-03.jpg">
+								</div>
+								<div class="txt">
+									<div class="name">Jessica Parkerson</div>
+									<div class="date">
+										<div class="d">January 6  <span class="br">|</span>  2013 </div>										
+										<div class="time">22:30</div>										
+									</div>
+								</div>									
+							</div>
+
+							<div class="person">
+								<div class="img">
+									<img alt="" src="img/content/private-04.jpg">
+								</div>
+								<div class="txt">
+									<div class="name">Jennie Johnson</div>
+									<div class="date">
+										<div class="d">January 6  <span class="br">|</span>  2013 </div>										
+										<div class="time">22:30</div>										
+									</div>
+								</div>									
+							</div>
+
+							<div class="person">
+								<div class="img">
+									<img alt="" src="img/content/private-01.jpg">
+								</div>
+								<div class="txt">
+									<div class="name">John Johnson</div>
+									<div class="date">
+										<div class="d">January 6  <span class="br">|</span>  2013 </div>										
+										<div class="time">22:30</div>										
+									</div>
+								</div>									
+							</div>
+
+							<div class="person">
+								<div class="img">
+									<img alt="" src="img/content/private-02.jpg">
+								</div>
+								<div class="txt">
+									<div class="name">Jennie Johnson</div>
+									<div class="date">
+										<div class="d">January 6  <span class="br">|</span>  2013 </div>										
+										<div class="time">22:30</div>										
+									</div>
+								</div>									
+							</div>
+
+							<div class="person">
+								<div class="img">
+									<img alt="" src="img/content/private-03.jpg">
+								</div>
+								<div class="txt">
+									<div class="name">John Johnson</div>
+									<div class="date">
+										<div class="d">January 6  <span class="br">|</span>  2013 </div>										
+										<div class="time">22:30</div>										
+									</div>
+								</div>									
+							</div>
+
+							<div class="person">
+								<div class="img">
+									<img alt="" src="img/content/private-04.jpg">
+								</div>
+								<div class="txt">
+									<div class="name">Jennie Johnson</div>
+									<div class="date">
+										<div class="d">January 6  <span class="br">|</span>  2013 </div>										
+										<div class="time">22:30</div>										
+									</div>
+								</div>									
+							</div>
+
+							<div class="person">
+								<div class="img">
+									<img alt="" src="img/content/private-01.jpg">
+								</div>
+								<div class="txt">
+									<div class="name">John Johnson</div>
+									<div class="date">
+										<div class="d">January 6  <span class="br">|</span>  2013 </div>										
+										<div class="time">22:30</div>										
+									</div>
+								</div>									
+							</div>
+
+							<div class="person">
+								<div class="img">
+									<img alt="" src="img/content/private-02.jpg">
+								</div>
+								<div class="txt">
+									<div class="name">Jennie Johnson</div>
+									<div class="date">
+										<div class="d">January 6  <span class="br">|</span>  2013 </div>										
+										<div class="time">22:30</div>										
+									</div>
+								</div>									
+							</div>
+
+							<div class="person">
+								<div class="img">
+									<img alt="" src="img/content/private-03.jpg">
+								</div>
+								<div class="txt">
+									<div class="name">John Johnson</div>
+									<div class="date">
+										<div class="d">January 6  <span class="br">|</span>  2013 </div>										
+										<div class="time">22:30</div>										
+									</div>
+								</div>									
+							</div>
+
+							<div class="person">
+								<div class="img">
+									<img alt="" src="img/content/private-04.jpg">
+								</div>
+								<div class="txt">
+									<div class="name">Jennie Johnson</div>
+									<div class="date">
+										<div class="d">January 6  <span class="br">|</span>  2013 </div>										
+										<div class="time">22:30</div>										
+									</div>
+								</div>									
+							</div>
+
+							<div class="person">
+								<div class="img">
+									<img alt="" src="img/content/private-03.jpg">
+								</div>
+								<div class="txt">
+									<div class="name">John Johnson</div>
+									<div class="date">
+										<div class="d">January 6  <span class="br">|</span>  2013 </div>										
+										<div class="time">22:30</div>										
+									</div>
+								</div>									
+							</div>
+
+							<div class="person">
+								<div class="img">
+									<img alt="" src="img/content/private-04.jpg">
+								</div>
+								<div class="txt">
+									<div class="name">Jennie Johnson</div>
+									<div class="date">
+										<div class="d">January 6  <span class="br">|</span>  2013 </div>										
+										<div class="time">22:30</div>										
+									</div>
+								</div>									
+							</div>
+
+							<div class="person">
+								<div class="img">
+									<img alt="" src="img/content/private-01.jpg">
+								</div>
+								<div class="txt">
+									<div class="name">John Johnson</div>
+									<div class="date">
+										<div class="d">January 6  <span class="br">|</span>  2013 </div>										
+										<div class="time">22:30</div>										
+									</div>
+								</div>									
+							</div>
+
+							<div class="person">
+								<div class="img">
+									<img alt="" src="img/content/private-02.jpg">
+								</div>
+								<div class="txt">
+									<div class="name">Jennie Johnson</div>
+									<div class="date">
+										<div class="d">January 6  <span class="br">|</span>  2013 </div>										
+										<div class="time">22:30</div>										
+									</div>
+								</div>									
+							</div>
+
+							<div class="person">
+								<div class="img">
+									<img alt="" src="img/content/private-03.jpg">
+								</div>
+								<div class="txt">
+									<div class="name">John Johnson</div>
+									<div class="date">
+										<div class="d">January 6  <span class="br">|</span>  2013 </div>										
+										<div class="time">22:30</div>										
+									</div>
+								</div>									
+							</div>
+
+							<div class="person">
+								<div class="img">
+									<img alt="" src="img/content/private-04.jpg">
+								</div>
+								<div class="txt">
+									<div class="name">Jennie Johnson</div>
+									<div class="date">
+										<div class="d">January 6  <span class="br">|</span>  2013 </div>										
+										<div class="time">22:30</div>										
+									</div>
+								</div>									
+							</div>
+
+							<div class="person">
+								<div class="img">
+									<img alt="" src="img/content/private-01.jpg">
+								</div>
+								<div class="txt">
+									<div class="name">John Johnson</div>
+									<div class="date">
+										<div class="d">January 6  <span class="br">|</span>  2013 </div>										
+										<div class="time">22:30</div>										
+									</div>
+								</div>									
+							</div>
+
+							<div class="person">
+								<div class="img">
+									<img alt="" src="img/content/private-02.jpg">
+								</div>
+								<div class="txt">
+									<div class="name">Jennie Johnson</div>
+									<div class="date">
+										<div class="d">January 6  <span class="br">|</span>  2013 </div>										
+										<div class="time">22:30</div>										
+									</div>
+								</div>									
+							</div>
+
+							<div class="person">
+								<div class="img">
+									<img alt="" src="img/content/private-03.jpg">
+								</div>
+								<div class="txt">
+									<div class="name">John Johnson</div>
+									<div class="date">
+										<div class="d">January 6  <span class="br">|</span>  2013 </div>										
+										<div class="time">22:30</div>										
+									</div>
+								</div>									
+							</div>
+
+							<div class="person">
+								<div class="img">
+									<img alt="" src="img/content/private-04.jpg">
+								</div>
+								<div class="txt">
+									<div class="name">Jennie Johnson</div>
+									<div class="date">
+										<div class="d">January 6  <span class="br">|</span>  2013 </div>										
+										<div class="time">22:30</div>										
+									</div>
+								</div>									
+							</div>
+
+						</div>	
+					</div>
+
+					<div class="received-messages feed">
+						<div class="msg-list">
+
+						<div class="post msg-box">
+							<div class="img"><img src="img/content/userpic.jpg"></div>
+							<div class="txt">
+								<div class="name"><a href="#">Quentin Tarantino</a></div>
+								<form action="#">
+									<textarea name="txtMsg" id="msg" placeholder="Type here to reply message"></textarea>
+									<div class="submit">
+										<a href="#" class="btn btn-tp1 green">Post</a>
+									</div>
+								</form>
+							</div>							
+						</div>
+						
+						<div class="hr"></div>
+
+							<div class="msg-box new-msg">
+								<div class="img"><img src="img/content/feed-2.jpg"></div>
+								<div class="txt">
+									<div class="name"><a href="#">Jessica Parkerson</a></div>
+									<!-- не выводить блок, если сообщения нет -->
+									<div class="msg">
+										Since classical antiquity, science as a type of knowledge has been closely linked to philosophy. In the early modern period the words "science" and "philosophy" .
+									</div>
+									<div class="date">
+										<div class="y">
+											<i></i>
+											<span class="month">January</span>
+											<span class="day">6</span>
+											<span class="br">|</span>
+											<span class="year">2013</span>											
+										</div>
+										<div class="t">
+											<i></i>
+											<span class="time">22:30</span>	
+										</div>
+									</div>
+								</div>							
+							</div>
+
+							<div class="msg-box my-msg">								
+								<div class="txt">
+									<div class="name"><a href="#">Quentin Tarantino</a></div>
+									<div class="msg">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, commodi, tempore, asperiores provident aperiam sunt cum reprehenderit consectetur voluptate aliquid qui iure fugiat amet at accusantium ad distinctio atque quis.
+									</div>
+									<div class="date">
+										<div class="y">
+											<i></i>
+											<span class="month">January</span>
+											<span class="day">6</span>
+											<span class="br">|</span>
+											<span class="year">2013</span>											
+										</div>
+										<div class="t">
+											<i></i>
+											<span class="time">22:30</span>	
+										</div>
+									</div>
+								</div>							
+								<div class="img"><img src="img/content/feed-4.jpg"></div>
+							</div>	
+
+							<div class="msg-box">
+								<div class="img"><img src="img/content/feed-2.jpg"></div>
+								<div class="txt">
+									<div class="name"><a href="#">Jessica Parkerson</a></div>
+									<!-- не выводить блок, если сообщения нет -->
+									<div class="msg">
+										Since classical antiquity, science as a type of knowledge has been closely linked to philosophy. In the early modern period the words "science" and "philosophy". Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, alias, nobis, voluptate, nihil ut asperiores earum rem ratione quis odio inventore unde voluptatibus temporibus ullam dolor. Veniam, obcaecati rerum id!
+									</div>
+									<div class="date">
+										<div class="y">
+											<i></i>
+											<span class="month">January</span>
+											<span class="day">6</span>
+											<span class="br">|</span>
+											<span class="year">2013</span>											
+										</div>
+										<div class="t">
+											<i></i>
+											<span class="time">22:30</span>	
+										</div>
+									</div>
+								</div>							
+							</div>	
+
+							<div class="msg-box my-msg">								
+								<div class="txt">
+									<div class="name"><a href="#">Quentin Tarantino</a></div>
+									<div class="msg">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, commodi, tempore, asperiores provident aperiam sunt cum reprehenderit consectetur voluptate aliquid qui iure fugiat amet at accusantium ad distinctio atque quis.
+									</div>
+									<div class="date">
+										<div class="y">
+											<i></i>
+											<span class="month">January</span>
+											<span class="day">6</span>
+											<span class="br">|</span>
+											<span class="year">2013</span>											
+										</div>
+										<div class="t">
+											<i></i>
+											<span class="time">22:30</span>	
+										</div>
+									</div>
+								</div>					
+								<div class="img"><img src="img/content/feed-4.jpg"></div>		
+							</div>
+
+							<div class="more">
+								<a href="#"><i></i>Load older</a>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="clear"></div>
+
+				</div>
+
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="winWidth">
+		<div class="clearChlds">
+			<div class="fl_left col-1">
+				<h4>About</h4>
+				<ul>
+					<li><a href="#">What is NatVox</a></li>
+					<li><a href="#">Press</a></li>
+					<li><a href="#">Our Team</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="fl_left col-2">
+				<h4>Help</h4>
+				<ul>
+					<li><a href="#">Getting starteds</a></li>
+					<li><a href="#">Support</a></li>
+					<li><a href="#">Complain</a></li>
+					<li><a href="#">Advanced Features</a></li>
+				</ul>
+			</div>
+			<div class="fl_right col-3">
+				<div class="logo">
+					<a href="#"></a>
+				</div>
+				<div class="slogan">We Expand the world, and Unite people</div>
+				<div class="about">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lacus ut est aliquet rutrum ac a felis. In hac habitasse platea dictumst. Donec ultricies dapibus urna sed fermentum. Aliquam id nisl non felis mattis gravida a sed felis. Duis euismod, diam venenatis malesuada suscipit, est urna faucibus nunc, id tincidunt tellus mauris vitae odio. 
+				</div>
+			</div>
+		</div>
+	</div>	
+</div> <!-- .footer -->
+
+<!-- lightbox forms here -->
+<div class="hidden" >
+	<div id="start-bc" class="lb-form start-bc-form">
+		<div class="bc-name">
+			<div class="txt">
+				<h3>Start broadcast in this Channel</h3>	
+				<p>Science &amp; Technology Channel</p>
+			</div>
+			<div class="img">
+				<img src="img/no-image.gif">
+			</div>
+		</div>
+		
+		<form action="#">
+
+			<span class="dd-box pr">
+				<!-- <a class="btn btn-tp6 dd" href="#" id="f-bcst">Science &amp; Technology Channel</a> -->
+				<select class="styled" id="f-bcst-sel">
+					<option selected="selected">Science &amp; Technology Channel</option>
+					<option>Biology Channel</option>
+					<option>Fun and Humour Channel</option>
+					<option>Animal Planet Channel</option>
+				</select>
+			</span><span class="dd-box pr">
+				<!-- <a class="btn btn-tp6 dd" href="#" id="f-category">Select Category</a> -->
+				<select class="styled" id="f-category-sel">
+					<option selected="selected">Select Category</option>
+					<option>Science</option>
+					<option>News</option>
+					<option>Fun</option>
+				</select>
+			</span><span class="dd-box">
+				<a class="btn btn-tp6 dd" href="#" id="f-upload">Upload image</a>
+			</span>
+
+			<div class="tbl">
+				<div class="labels">
+					<div class="lbl t-name">
+						<label for="f-name">Enter name of the broadcast</label>
+					</div>
+					<div class="lbl t-date">
+						<label for="f-date">Select date</label>
+					</div>
+					<div class="lbl t-time">
+						<label for="f-time">Select time</label>
+					</div>
+					<div class="lbl t-privacy">
+						<label for="f-privacy">Privacy</label>
+					</div>
+				</div>
+				<div class="inputs">
+					<div class="inp">
+						<input id="f-name" class="custom">
+					</div>
+					<div class="inp">
+						<span class="dd-box pr">
+							<a class="btn btn-tp6 dd" href="#" id="f-date">12 January 2013</a>
+						</span>
+					</div>
+					<div class="inp">
+						<span class="dd-box pr">
+							<!-- <a class="btn btn-tp6 dd" href="#" id="f-time">12:00</a> -->
+							<select class="styled" id="f-time-sel">
+								<option selected="selected">Now</option>
+								<option>12:00</option>
+								<option>12:15</option>
+								<option>12:30</option>
+								<option>12:45</option>
+								<option>13:00</option>
+								<option>13:15</option>
+								<option>13:30</option>
+								<option>13:45</option>
+								<option>14:00</option>
+								<option>14:15</option>
+								<option>14:30</option>
+								<option>14:45</option>
+								<option>15:00</option>
+							</select>
+						</span>
+					</div>
+					<div class="inp">
+						<span class="dd-box">
+							<!-- <a class="btn btn-tp6 dd" href="#" id="f-privacy">Selected people</a> -->
+							<select class="styled" id="f-privacy-sel">
+								<option selected="selected">Selected people</option>
+								<option>Public</option>
+								<option>Private</option>
+							</select>
+						</span>
+					</div>	
+				</div>
+			</div>
+
+			<a class="add closed" href="#">Add description and/or category</a>
+			<!-- <a class="add opened" href="#">Add description and/or category</a> -->
+
+			<div class="hidden add-descr-box">
+				<div class="h">
+					<label for="f-dscr-category">Category</label>
+					<span class="dd-box">
+						<!-- <a class="btn btn-tp6 dd" href="#" id="f-dscr-category">Select Category</a> -->
+						<select class="styled" id="f-dscr-category-sel">
+							<option selected="selected">Select Category</option>
+							<option>Science</option>
+							<option>News</option>
+							<option>Fun</option>
+						</select>
+					</span>
+				</div>
+				<textarea class="custom" id="f-bc-descr" placeholder="Enter description here..."></textarea>
+			</div>
+
+			
+
+			<!-- if Privacy is not "selected people" -->
+			<p class="submit">
+				<input type="submit" value="Start broadcast" class="btn btn-tp1 green">
+			</p>
+			<!-- //if -->
+
+		</form>	
+	</div>
+</div>
+
+
+
+</body>
+</html>	
